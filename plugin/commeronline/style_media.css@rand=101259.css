@@ -1,0 +1,139 @@
+@media (max-width: 1365px){
+    .commeronline_ng_close{
+        width:40px;
+        height:40px;
+        top:20px;
+        right:20px;
+    }
+
+    .commeronline_ng_body{
+        /*width:calc(100% - 20px);*/
+        width:100%;
+        max-width:500px;
+        margin:0 auto;
+        min-height:auto;
+        background:#e7f5fb;
+    }
+    .commeronline_ng_body_inner{
+        max-width:400px;
+        margin:0 auto;
+        padding:70px 20px 30px 20px;
+    }
+    .commeronline_ng_cont1{
+        display:block;
+    }
+    .commeronline_ng_cont1_box1{
+        width:auto;
+    }
+    .commeronline_ng_cont1_box2{
+        width:auto;
+        margin:0;
+        margin-top:27px;
+    }
+    .commeronline_ng_discuss_title{
+        font-size:18px;
+    }
+    .commeronline_ng_discuss_list{
+        margin-top:12px;
+    }
+    .commeronline_ng_discuss_styling_checkbox_tx{
+        font-size:17px;
+    }
+    .commeronline_form_header{
+        padding:0;
+    }
+    .commeronline_zagol1{
+        font-size:32px;
+    }
+    .commeronline_zagol1_span1{
+        font-size:40px;
+    }
+    .commeronline_form_content{
+        max-width:400px;
+        margin:0 auto;
+        margin-top:35px;
+        padding:0;
+    }
+    .commeronline_ng_cont_foot{
+        display:block;
+        text-align:center;
+    }
+    .commeronline_ng_cont_foot_box2{
+        width:auto;
+        margin-top:20px;
+        text-align:center;
+    }
+
+    .commeronline_ng_budget{
+        margin-top:27px;
+    }
+    .commeronline_ng_formcont1{
+        display:block;
+    }
+    .commeronline_ng_formcont1_box1{
+        padding:0;
+    }
+    .commeronline_ng_formcont1_box2{
+        margin:0;
+        padding:0;
+        margin-top:5px;
+    }
+
+    .commeronline_ng_formcont2{
+        display:block;
+    }
+    .commeronline_ng_formcont2_box1{
+        padding:0;
+		margin:0;
+    }
+    .commeronline_ng_formcont2_box2{
+        margin:0;
+        padding:0;
+        margin-top:5px;
+    }
+	
+	.commeronline_ng_formcont2_box2 input[type="text"]{
+		max-width:130px!important;
+	}
+	
+    .commeronline_ng_formcont1_name{
+        font-size:18px;
+    }
+    .commeronline_ng_formcont1_unit{
+        font-size:16px;
+        margin-left:7px!important;
+    }
+    .commeronline_ng_weight{
+        margin-top:0;
+    }
+    .commeronline_ng_primech{
+        margin-top:27px;
+    }
+    .commeronline_rules{
+        text-align:center;
+        font-size:13px;
+    }
+
+    .commeronline.result .commeronline_inner{
+        overflow:hidden;
+        height:600px;
+    }
+}
+
+@media (max-width: 767px){
+    .commeronline_input1{
+        font-size:17px;
+        height:45px;
+        padding-left:15px;
+    }
+    .commeronline_textarea1{
+        font-size:17px;
+        padding-left:15px;
+        height:200px;
+    }
+    .commeronline_button{
+        width:100%;
+        max-width:240px;
+        font-size:21px;
+    }
+}

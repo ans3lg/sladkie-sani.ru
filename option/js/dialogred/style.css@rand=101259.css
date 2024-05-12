@@ -1,0 +1,290 @@
+/*
+body.modal[data-data-devicelab_gadget_bool="1"]{
+    position:fixed;
+    height: 100%;
+    width:100%;
+}
+*/
+
+.dialogred_modal{
+    position:absolute;
+    z-index:2000;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    text-align:center;
+    display:none;
+    overflow:hidden;
+}
+.dialogred_modal:before{
+    content:'';
+    width:0;
+    height:100%;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.dialogred_wall{
+    position:fixed;
+    top:0;
+    left:50%;
+    z-index:4;
+    width:100%;
+    height:100%;
+    max-width:890px;
+    background:#fff;
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    -ms-transform:translateX(-50%);
+    -o-transform:translateX(-50%);
+    transform:translateX(-50%);
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.15);
+}
+
+.dialogred_overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:2;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,0.2);
+    opacity:1;
+}
+
+.dialogred_wall2{
+    position:fixed;
+    top:0;
+    left:50%;
+    z-index:12;
+    width:100%;
+    height:1px;
+    max-width:890px;
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    -ms-transform:translateX(-50%);
+    -o-transform:translateX(-50%);
+    transform:translateX(-50%);
+}
+
+.dialogred_inner{
+    visibility:hidden;
+    display:inline-block;
+    vertical-align:middle;
+    margin:50px 0;
+    background:#fff;
+    box-sizing: border-box;
+    width:100%;
+    max-width:600px;
+    position:relative;
+    text-align:left;
+    z-index:8;
+    opacity:0;
+    -webkit-transition:all 0.4s ease-out 0s;
+    -moz-transition:all 0.4s ease-out 0s;
+    -o-transition:all 0.4s ease-out 0s;
+    transition:all 0.4s ease-out 0s;
+
+    /*
+    -webkit-transform: translateY(900px);
+    -ms-transform: translateY(900px);
+    transform: translateY(900px);
+    */
+
+    will-change:top,transform;
+}
+.body_dialogred_inner_show .dialogred_inner{
+    visibility:visible;
+}
+
+.dialogred_modal[data-adjust="default"] .dialogred_inner{
+    top:-500px;
+}
+.body_dialogred_inner_show .dialogred_modal[data-adjust="default"] .dialogred_inner{
+    opacity:1;
+    /*
+    -webkit-transform:translateY(0);
+    -ms-transform:translateY(0);
+    transform:translateY(0);
+    */
+    top:0;
+}
+
+.dialogred_modal[data-adjust="scale"] .dialogred_inner{
+    background:transparent;
+    -webkit-transform:scale(0.8);
+    -moz-transform:scale(0.8);
+    -ms-transform:scale(0.8);
+    -o-transform:scale(0.8);
+    transform:scale(0.8);
+    -webkit-transition:opacity 0.4s ease-out 0s,-webkit-transform 0.6s cubic-bezier(.5,2,.5,.7) 0s;
+    -moz-transition:opacity 0.4s ease-out 0s,-moz-transform 0.6s cubic-bezier(.5,2,.5,.7) 0s;
+    -o-transition:opacity 0.4s ease-out 0s,-o-transform 0.6s cubic-bezier(.5,2,.5,.7) 0s;
+    transition:opacity 0.4s ease-out 0s,transform 0.6s cubic-bezier(.5,2,.5,.7) 0s;
+    top:0;
+    opacity:0.8;
+}
+
+.body_dialogred_inner_show .dialogred_modal[data-adjust="scale"] .dialogred_inner{
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -ms-transform:scale(1);
+    -o-transform:scale(1);
+    transform:scale(1);
+    opacity:1;
+}
+
+.dialogred_close{
+    display:none;
+    position:fixed;
+    right:15px;
+    top:45px;
+    z-index:14;
+}
+.dialogred_close_img{
+    cursor:pointer;
+    display:inline-block;
+    vertical-align:middle;
+	width:64px;
+	height:64px;
+	background-repeat:no-repeat;
+	background-image:url(img/close12.png);
+	opacity:0.8;
+}
+.dialogred_close_img:hover{
+	opacity:1;
+}
+
+.dialogred_close2{
+    position:absolute;
+    right:15px;
+    top:15px;
+    z-index:14;
+}
+.dialogred_close2_img{
+    cursor:pointer;
+    display:inline-block;
+    vertical-align:middle;
+	width:30px;
+	height:30px;
+	background-repeat:no-repeat;
+	background-image:url(img/close12.png);
+    background-size:30px 30px;
+	opacity:0.7;
+}
+.dialogred_close2_img:hover{
+	opacity:1;
+}
+
+.dialogred_loader{
+    display:none;
+    position:fixed;
+    top:50%;
+    left:50%;
+    z-index:20;
+
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.dialogred_loader1{
+    width:55px;
+    height:32px;
+    text-align:center;
+    font-size:10px;
+}
+.dialogred_loader1 > div{
+    background-color:#333;
+    height:100%;
+    width:7px;
+    display:inline-block;
+
+    -webkit-animation: dialogred_sk-stretchdelay 0.6s infinite ease-in-out;
+    animation: dialogred_sk-stretchdelay 0.6s infinite ease-in-out;
+
+    margin-left:2px;
+    border:1px #858585 solid;
+    opacity:0.9;
+}
+
+.dialogred_loader1 .rect2{
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+.dialogred_loader1 .rect3{
+  -webkit-animation-delay: -0.4s;
+  animation-delay: -0.4s;
+}
+.dialogred_loader1 .rect4{
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
+}
+.dialogred_loader1 .rect5{
+  -webkit-animation-delay: -0.2s;
+  animation-delay: -0.2s;
+}
+
+@-webkit-keyframes dialogred_sk-stretchdelay{
+  0%, 40%, 100% {
+    -webkit-transform: scaleY(0.50);
+    }
+  20% {
+      -webkit-transform: scaleY(1.0);
+      background-color:#e8e8e8;
+  }
+}
+@keyframes dialogred_sk-stretchdelay{
+  0%, 40%, 100% {
+    transform: scaleY(0.50);
+    -webkit-transform: scaleY(0.50);
+  }
+  20% {
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+    background-color:#e8e8e8;
+  }
+}
+
+.dialogred_modal.loading .dialogred_loader{
+    display:block;
+}
+
+
+.body_dialogred_open{
+    overflow-y:scroll;
+}
+
+.body_dialogred_open .cmsl_outer{
+    position:fixed;
+    width:100%;
+    height:100%;
+    -webkit-filter:blur(12px);
+    filter:blur(12px);
+
+    /*
+    transition: opacity .5s ease-out;
+    opacity: 1;
+    overflow: hidden;
+    min-height: 100%;
+    */
+}
+
+.body_dialogred_open .dialogred_modal{
+    overflow:visible;
+    display:block;
+}
+
+.body_dialogred_inner_show .dialogred_close{
+    display:block;
+}
+
+
+.dialogred_data{
+    min-height:400px;
+}

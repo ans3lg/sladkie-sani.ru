@@ -1,0 +1,125 @@
+@media (max-width: 1023px){
+    .catalog__basket_formtovar2_calc_form input[type="text"]{
+        font-size:23px;
+    }
+    .catalog__basket_formtovar2_to_cart{
+        min-width:180px;
+        padding:0 20px 0 20px;
+    }
+    .catalog__basket_formtovar2_to_cart_tx{
+        font-size:22px;
+        margin-left:17px;
+    }
+    .catalog__basket_formtovar2_in_cart{
+        min-width:200px;
+        padding:0 20px 0 20px;
+    }
+    .catalog__basket_formtovar2_in_cart_tx{
+        font-size:20px;
+        margin-left:17px;
+    }
+
+    .catalog__basket_formtovar_korzina2 input[type="text"]{
+        width:50px;
+        height:35px;
+        font-size:16px;
+    }
+}
+
+@media (max-width: 767px){
+    .catalog__basket_formtovar1_calc_form{
+        width:80px;
+    }
+    .catalog__basket_formtovar1_to_cart a{
+        padding-left:20px;
+        padding-right:20px;
+    }
+    .catalog__basket_formtovar1_in_cart_inner{
+        padding-left:15px;
+        padding-right:32px;
+        padding-top:8px;
+        padding-bottom:8px;
+    }
+
+    .catalog__basket_formtovar_korzina_del span{
+        width:13px;
+        height:13px;
+        background-size:13px 13px;
+    }
+}
+
+@media (max-width: 480px){
+    .catalog__tovar_view_action_shop{
+        margin-top:30px;
+    }
+    .catalog__basket_formtovar2_calc_form{
+        width:100px;
+    }
+    .catalog__basket_formtovar2_calc_form_minus{
+        left:7px;
+    }
+    .catalog__basket_formtovar2_calc_form_plus{
+        right:7px;
+    }
+    .catalog__basket_formtovar2_calc_form input[type="text"]{
+        font-size:21px;
+    }
+    .catalog__basket_formtovar2_to_cart{
+        min-width:auto;
+    }
+    .catalog__basket_formtovar2_to_cart_icon{
+        width:22px;
+        height:25px;
+        background-size:22px 25px;
+    }
+    .catalog__basket_formtovar2_to_cart_tx{
+        font-size:20px;
+    }
+    .catalog__basket_formtovar2_in_cart{
+        padding:0 15px 0 15px;
+        min-width:auto;
+        max-width:200px;
+    }
+    .catalog__basket_formtovar2_to_cart_tx{
+        margin-left:13px;
+    }
+    .catalog__basket_formtovar2_in_cart_icon{
+        width:18px;
+        height:20px;
+        background-size:18px 20px;
+    }
+    .catalog__basket_formtovar2_in_cart_tx{
+        font-size:17px;
+        margin-left:13px;
+    }
+    .catalog__basket_formtovar2_in_cart_del{
+        top:auto;
+        left:auto;
+        bottom:100%;
+        right:15px;
+        margin:0;
+        -webkit-transform:none;
+        -moz-transform:none;
+        -ms-transform:none;
+        -o-transform:none;
+        transform:none;
+        margin-bottom:8px;
+    }
+}
+
+@media (max-width: 359px){
+    .catalog__basket_formtovar2_in_cart_tx{
+        margin-left:0;
+
+    }
+    .catalog__basket_formtovar2_in_cart_icon{
+        display:none;
+    }
+
+    .catalog__basket_formtovar2_to_cart_tx{
+        margin-left:0;
+    }
+    .catalog__basket_formtovar2_to_cart_icon{
+        display:none;
+    }
+}

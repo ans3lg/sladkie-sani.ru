@@ -1,0 +1,71 @@
+.photopic_photo_list4{
+    display:flex;
+    flex-wrap:wrap;
+    margin-left:-12px;
+    margin-right:-12px;
+}
+.photopic_photo_list4_item{
+    width:33.333%;
+    padding:12px;
+}
+.photopic_photo_list4_item_inner{
+    display:block;
+    text-decoration:none!important;
+    position:relative;
+    border-radius:10px;
+    overflow:hidden;
+}
+.photopic_photo_list4_item_photo{
+    padding-top:72%;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+}
+.photopic_photo_list4_item_bg{
+    visibility:hidden;
+    opacity:0;
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:5;
+    width:100%;
+    height:100%;
+    transition:all 0.2s ease-in 0s;
+    border-radius:10px;
+background:rgba(21, 85, 119, 0.9);
+background:-moz-linear-gradient(45deg, rgba(21, 85, 119, 0.9) 9%, rgba(21, 85, 119, 0.81) 20%, rgba(21, 85, 119, 0.75) 27%, rgba(21, 85, 119, 0.2) 100%);
+background:-webkit-gradient(left bottom, right top, color-stop(9%, rgba(21, 85, 119, 0.9)), color-stop(20%, rgba(21, 85, 119, 0.81)), color-stop(27%, rgba(21, 85, 119, 0.75)), color-stop(100%, rgba(21, 85, 119, 0.2)));
+background:-webkit-linear-gradient(45deg, rgba(21, 85, 119, 0.9) 9%, rgba(21, 85, 119, 0.81) 20%, rgba(21, 85, 119, 0.75) 27%, rgba(21, 85, 119, 0.2) 100%);
+background:-o-linear-gradient(45deg, rgba(21, 85, 119, 0.9) 9%, rgba(21, 85, 119, 0.81) 20%, rgba(21, 85, 119, 0.75) 27%, rgba(21, 85, 119, 0.2) 100%);
+background:-ms-linear-gradient(45deg, rgba(21, 85, 119, 0.9) 9%, rgba(21, 85, 119, 0.81) 20%, rgba(21, 85, 119, 0.75) 27%, rgba(21, 85, 119, 0.2) 100%);
+background:linear-gradient(45deg, rgba(21, 85, 119, 0.9) 9%, rgba(21, 85, 119, 0.81) 20%, rgba(21, 85, 119, 0.75) 27%, rgba(21, 85, 119, 0.2) 100%);
+filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#754290', endColorstr='#754290', GradientType=1 );
+}
+.photopic_photo_list4_item_zoom{
+    visibility:hidden;
+    opacity:0;
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:10;
+    width:47px;
+    height:47px;
+    background-image:url(img/photo_list4_zoom.svg);
+    background-repeat:no-repeat;
+    transition:all 0.1s ease-in 0s;
+    -webkit-transform:translateX(-51%) translateY(-50%);
+    -moz-transform:translateX(-51%) translateY(-50%);
+    -ms-transform:translateX(-51%) translateY(-50%);
+    -o-transform:translateX(-51%) translateY(-50%);
+    transform:translateX(-51%) translateY(-50%);
+}
+.photopic_photo_list4_item_inner:hover .photopic_photo_list4_item_bg{
+    visibility:visible;
+    opacity:1;
+}
+.photopic_photo_list4_item_inner:hover .photopic_photo_list4_item_zoom{
+    visibility:visible;
+    opacity:1;
+}

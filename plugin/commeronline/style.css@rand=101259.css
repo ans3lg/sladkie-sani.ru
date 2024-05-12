@@ -1,0 +1,563 @@
+.commeronline_inner{
+    position:relative;
+}
+.commeronline_result{
+    display:none;
+	position:absolute;
+	top:15%;
+	left:0px;
+	width:100%;
+	text-align:center;
+	font-size:25px;
+	line-height:1.4;
+	color:#00942c;
+}
+.commeronline_form_wrap{
+	position:relative;
+}
+
+.commeronline_input1{
+    width:100%;
+    height:49px;
+    font-size:19px;
+    color:#000;
+    line-height:1;
+    font-family:proximanovareg;
+    padding:6px 5px 5px 27px;
+    border:0;
+    outline:0;
+    border-radius:20px;
+}
+
+.commeronline_textarea1{
+    width:100%;
+    height:75px;
+    font-size:19px;
+    color:#000;
+    line-height:1.2;
+    font-family:proximanovareg;
+    padding:15px 10px 5px 27px;
+    border:0;
+    outline:0;
+    border-radius:20px;
+    /*
+    -webkit-box-shadow:0px 0px 8px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow:0px 0px 8px 0px rgba(0,0,0,0.25);
+    box-shadow:0px 0px 8px 0px rgba(0,0,0,0.25);
+    */
+}
+
+.commeronline_label{
+    -webkit-transition:all 0.2 ease-out 0s;
+    -moz-transition:all 0.2 ease-out 0s;
+    -ms-transition:all 0.2 ease-out 0s;
+    -o-transition:all 0.2 ease-out 0s;
+    transition:all 0.2 ease-out 0s;
+}
+.commeronline_label.err input[type="text"],
+.commeronline_label.err textarea{
+    border-bottom:1px #b82e2e solid;
+}
+.commeronline_label.shadowred input[type="text"],
+.commeronline_label.shadowred textarea{
+    transition:box-shadow 0.2s ease 0s;
+    -webkit-box-shadow:0 8px 6px -7px #F00;
+    -moz-box-shadow:0 8px 6px -7px #F00;
+    box-shadow:0 8px 6px -7px #F00
+}
+
+.commeronline input[type="text"]::-webkit-input-placeholder,
+.commeronline textarea::-webkit-input-placeholder{
+	opacity:0.55;
+	color:#000;
+}
+.commeronline input[type="text"]:-moz-placeholder,
+.commeronline textarea:-moz-placeholder{
+	opacity:0.55;
+	color:#000;
+}
+.commeronline input[type="text"]:-ms-input-placeholder,
+.commeronline textarea:-ms-input-placeholder{
+	opacity:0.55;
+	color:#000;
+}
+
+.commeronline_button{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:260px;
+    max-width:260px;
+    height:46px;
+    border-radius:20px;
+    background:#d22427;
+    color:#fff;
+    font-size:23px;
+    font-family:proximanovareg;
+    transition:all 0.15s 0s linear;
+    text-decoration:none!important;
+    border:none;
+    outline:none!important;
+    padding:5px 15px;
+    cursor:pointer;
+    position:relative;
+    text-decoration:underline;
+    overflow:hidden;
+    -webkit-box-shadow:0px 0px 8px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow:0px 0px 8px 0px rgba(0,0,0,0.25);
+    box-shadow:0px 0px 8px 0px rgba(0,0,0,0.25);
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.commeronline_button:hover{
+    background:#de3b3e;
+    color:#fff;
+}
+.commeronline_button:active{
+    top:1px;
+}
+.commeronline_button:disabled{
+    background:#de3b3e;
+    top:0!important;
+    opacity:0.5;
+    cursor:auto;
+}
+.commeronline_button_loader{
+    display:none;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-5px;
+	margin-left:-21px;
+	display:none;
+	background-image:url(img/loader2.gif);
+	background-repeat:no-repeat;
+	width:43px;
+	height:11px;
+}
+.commeronline.loading .commeronline_button_tx{
+    visibility:hidden;
+}
+.commeronline.loading .commeronline_button_loader{
+    display:block;
+}
+
+.commeronline_error{
+    display:none;
+    text-align:left;
+    margin-top:15px;
+    font-size:14px;
+    line-height:1.2;
+    color:red;
+}
+.commeronline.error .commeronline_error{
+    /*display:block;*/
+}
+
+.commeronline.result .commeronline_form_wrap2{
+    visibility:hidden;
+}
+.commeronline.result .commeronline_form_wrap2,
+.commeronline.result .commeronline_form_wrap2 *{
+    visibility:hidden!important;
+    -webkit-transition:all 0s linear 0s!important;
+    -moz-transition:all 0s linear 0s!important;
+    -ms-transition:all 0s linear 0s!important;
+    -o-transition:all 0s linear 0s!important;
+    transition:all 0s linear 0s!important;
+}
+.commeronline.result .commeronline_result{
+    display:block;
+}
+.commeronline.result *{
+    -webkit-transition:all 0s linear 0s;
+    -moz-transition:all 0s linear 0s;
+    -ms-transition:all 0s linear 0s;
+    -o-transition:all 0s linear 0s;
+    transition:all 0s linear 0s;
+}
+
+.commeronline_rules{
+    margin-top:7px;
+    font-size:14px;
+    line-height:1.1;
+    color:#000;
+    font-family:proximanovalight;
+    text-align:left;
+}
+.commeronline_rules a{
+    text-decoration:underline;
+    color:#000;
+}
+.commeronline_rules a:hover{
+    text-decoration:none;
+    color:#000;
+}
+
+.commeronline_form_engine{
+    margin-top:35px;
+}
+.commeronline_form_header{
+    padding-left:60px;
+}
+.commeronline_form_content{
+    margin-top:28px;
+    padding-left:10px;
+}
+.commeronline_zagol1{
+    font-size:41px;
+    line-height:1;
+    color:#4b8caf;
+    font-family:proximanovabold;
+}
+.commeronline_zagol1_span1{
+    font-size:62px;
+    line-height:0.9;
+    display:block;
+    margin-bottom:2px;
+    font-family:proximanovabold;
+}
+/*****/
+
+.commeronline_ng_body{
+    width:1288px;
+    min-height:923px;
+    background-image:url(custom_img/commeronline_ng_bg.png);
+    background-repeat:no-repeat;
+    position:relative;
+}
+.commeronline_ng_body_inner{
+    position:relative;
+    z-index:10;
+    padding-top:148px;
+    max-width:930px;
+    margin:0 auto;
+}
+
+.commeronline_ng_close{
+    position:absolute;
+    z-index:20;
+    top:95px;
+    right:105px;
+    width:64px;
+    height:64px;
+    background:#e7f5fb;
+    border-radius:100%;
+    cursor:pointer;
+}
+.commeronline_ng_close_pip{
+    position:absolute;
+    z-index:10;
+    top:50%;
+    left:50%;
+    width:25px;
+    height:25px;
+    margin-top:-12px;
+    margin-left:-12px;
+    background-image:url(custom_img/commeronline_ng_close.svg);
+    background-repeat:no-repeat;
+}
+
+.dialogred_modal[data-theme="commeronline_ng"] .dialogred_inner{
+    margin-top:23px;
+}
+.dialogred_modal[data-theme="commeronline_ng"] .dialogred_close2{
+    display:none;
+}
+
+.body_dialogred_inner_show .dialogred_modal[data-theme="commeronline_ng"] .dialogred_inner{
+    transform:scale(1);
+}
+
+.commeronline_ng_cont1{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+}
+.commeronline_ng_cont1_box1{
+    width:425px;
+}
+.commeronline_ng_cont1_box2{
+    width:440px;
+    margin-left:20px;
+}
+.commeronline_ng_cont1_box1_formblock{
+    margin-top:12px;
+}
+.commeronline_ng_cont1_box1_formblock:nth-child(1){
+    margin:0;
+}
+
+.commeronline_ng_discuss_title{
+    font-size:28px;
+    line-height:1;
+    color:#4b8caf;
+}
+.commeronline_ng_discuss_list{
+    margin-top:17px;
+    padding-left:5px;
+}
+.commeronline_ng_discuss_list_item{
+    margin-top:2px;
+}
+.commeronline_ng_discuss_list_item:nth-child(1){
+    margin:0;
+}
+
+.commeronline_ng_discuss_styling_checkbox label{
+    display:block;
+    cursor:pointer;
+    padding:3px 0;
+    position:relative;
+}
+.commeronline_ng_discuss_styling_checkbox *{
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.commeronline_ng_discuss_styling_checkbox input[type=checkbox]{
+    opacity:0;
+    position:absolute;
+    top:0;
+    left:0;
+    margin:0;
+}
+.commeronline_ng_discuss_styling_checkbox_cont_virt{
+    display:flex;
+    flex-wrap:nowrap;
+}
+.commeronline_ng_discuss_styling_checkbox_pip{
+    width:20px;
+    height:20px;
+    border:1px #000 solid;
+    background:transparent;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:100%;
+    position:relative;
+}
+.commeronline_ng_discuss_styling_checkbox_pip_v{
+    position:absolute;
+    z-index:10;
+    top:1px;
+    left:3px;
+    transform:scale(0.4);
+    opacity:0;
+    visibility:hidden;
+    transition:all 0.07s ease-out 0s;
+    width:18px;
+    height:14px;
+    background-image:url(custom_img/discuss_styling_checkbox_pip_v2.svg);
+    background-repeat:no-repeat;
+    will-change:transform,opacity,visibility;
+}
+.commeronline_ng_discuss_styling_checkbox_tx{
+    flex:1;
+    padding-top:1px;
+    margin-left:9px;
+    font-size:19px;
+    line-height:1.2;
+    color:#000;
+    font-family:proximanovareg;
+}
+.commeronline_ng_discuss_styling_checkbox input[type=checkbox]:checked+.commeronline_ng_discuss_styling_checkbox_cont_virt .commeronline_ng_discuss_styling_checkbox_pip_v{
+    opacity:1;
+    visibility:visible;
+    transform:scale(1);
+    transition:all 0.06s ease-out 0s;
+}
+
+.catalog__basket_action_oform_styling_file label{
+    display:block;
+    cursor:pointer;
+    position:relative;
+}
+.catalog__basket_action_oform_styling_file input[type=file]{
+    position:absolute;
+    top:0;
+    left:0;
+    display:block;
+    outline:0;
+    opacity:0;
+    pointer-events:none;
+    user-select:none;
+}
+.catalog__basket_action_oform_styling_file_virt_cont{
+    display:flex;
+    flex-wrap:nowrap;
+    height:47px;
+    overflow:hidden;
+}
+.catalog__basket_action_oform_styling_file_virt_button{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:15px;
+    line-height:1;
+    color:#f4f7f9;
+    font-family:proximanovalight;
+    background:#608ca3;
+    width:140px;
+    padding:5px;
+}
+.catalog__basket_action_oform_styling_file_virt_button:hover{
+    color:#fff;
+}
+.catalog__basket_action_oform_styling_file_virt_info{
+    display:flex;
+    flex:1;
+    align-items:center;
+    font-family:proximanovareg;
+    background:#fff;
+    padding:5px;
+    padding-left:15px;
+    overflow:hidden;
+}
+.catalog__basket_action_oform_styling_file_virt_info_span{
+    font-size:15px;
+    line-height:1.2;
+    color:#797979;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    /*width:170px;*/
+    max-width:100%;
+    overflow:hidden;
+}
+
+.commeronline_ng_formcont1{
+    display:flex;
+    flex-wrap:nowrap;
+}
+.commeronline_ng_formcont1_box1{
+    width:215px;
+}
+.commeronline_ng_formcont1_box2{
+    flex:1;
+    margin-left:15px;
+}
+
+.commeronline_ng_formcont1_name{
+    font-size:19px;
+    line-height:1;
+    color:#000;
+    font-family:proximanovareg;
+    padding-top:13px;
+}
+.commeronline_ng_formcont1_unit{
+    display:inline-block;
+    padding-top:13px;
+    vertical-align:top;
+    margin-left:7px;
+    font-size:19px;
+    line-height:1;
+    color:#000;
+    font-family:proximanovareg;
+}
+.commeronline_ng_formcont1 input[type="text"]{
+    max-width:130px;
+    text-align:center;
+    padding-left:3px;
+    padding-right:3px;
+    height:45px;
+}
+
+.commeronline_ng_formcont2{
+    display:flex;
+    flex-wrap:nowrap;
+}
+.commeronline_ng_formcont2_box1{
+    width:114px;
+}
+.commeronline_ng_formcont2_box2{
+    flex:1;
+    margin-left:6px;
+    white-space:nowrap;
+}
+.commeronline_ng_formcont2_box2 input[type="text"]{
+    max-width:60px;
+}
+.commeronline_ng_formcont2_box2 .commeronline_ng_formcont1_unit{
+    margin-left:3px;
+}
+
+.commeronline_formcond_kolvo .commeronline_ng_formcont2_box1{
+    padding-left:8px;
+}
+.commeronline_formcond_kolvo input[type="text"]{
+    max-width:50px;
+}
+
+.commeronline_ng_budget{
+    margin-top:23px;
+}
+.commeronline_ng_weight{
+    margin-top:12px;
+}
+
+.commeronline_ng_primech{
+    margin-top:12px;
+    max-width:610px;
+}
+
+.commeronline_ng_cont_foot{
+    max-width:610px;
+    margin:0 auto;
+    margin-top:30px;
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+}
+.commeronline_ng_cont_foot_box2{
+    width:330px;
+}
+
+
+/*http://cssdeck.com/labs/styling-select-box-with-css3*/
+.commeronline_selbox1{
+    background-color:#fff;
+    background-image:url(../zakazonline/img/selbox_pip1.png);
+    background-repeat:no-repeat;
+    background-position:right 10px center;
+    border-radius:20px;
+}
+.commeronline_selbox1 select{
+    /*clear style*/
+    background:transparent;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    -o-appearance:none;
+    appearance:none;
+    text-overflow:""; /* this is important! */
+    border:0;
+    outline:0;
+    margin:0;
+
+    /*for Iphone*/
+    box-shadow:none;
+    -webkit-box-shadow:none;
+    -webkit-border-radius:0px;
+    -moz-border-radius:0px;
+    border-radius:0px;
+    width:100%;
+    font-size: 19px;
+    color: #000;
+    line-height: 1;
+    font-family: proximanovareg;
+    color:#000;
+    padding:0 5px 0 27px;
+    height:49px;
+    /*border:1px #d4d4d4 solid;*/
+    cursor:pointer;
+}
+/*for IE 11 styling */
+.commeronline_selbox1 select::-ms-expand{
+    display:none;
+}
+.commeronline_selbox1 select option{
+    color:#000;
+}

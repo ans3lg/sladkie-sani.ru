@@ -1,0 +1,11 @@
+@media (max-width: 1279px){
+    .catalog_filter_widget{
+        display:none!important;
+    }
+    .catalog_filter_user_picked_ppp{
+        display:none!important;
+    }
+	.catalog_filter_dinamic_content{
+		margin-top:0;
+	}
+}

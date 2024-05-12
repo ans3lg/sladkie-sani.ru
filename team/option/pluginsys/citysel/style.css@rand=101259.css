@@ -1,0 +1,39 @@
+.citysel_dialog_header{
+    padding:15px;
+    padding-bottom:0;
+    font-size:23px;
+    line-height:1;
+    color:rgba(0,0,0,0.7);
+    font-weight:bold;
+}
+.citysel_dialog_content{
+    padding:25px 15px;
+}
+
+.citysel_dialog_chunk{
+    display:flex;
+    flex-wrap:nowrap;
+}
+.citysel_dialog_chunk_item{
+    flex:0 1 33%;
+}
+.citysel_dialog_list_item{
+    margin-top:13px;
+    line-height:1.2;
+}
+.citysel_dialog_list_item:nth-child(1){
+    margin-top:0;
+}
+.citysel_dialog_list_item_link{
+    font-size:17px;
+    line-height:1.2;
+    color:#000;
+    text-decoration:underline;
+}
+.citysel_dialog_list_item_link:hover{
+    color:#000;
+    text-decoration:none;
+}
+.citysel_dialog_list_item.active .citysel_dialog_list_item_link{
+    font-weight:bold;
+}

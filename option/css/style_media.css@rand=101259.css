@@ -1,0 +1,173 @@
+@media (max-width: 1650px){
+    .cmsl_theme_breadrazd_wrap_inner{
+        padding-top:17px;
+    }
+
+    .cmsl_razdsite h1{
+        font-size:2.4rem;
+    }
+
+    .cmsl_wrapper1_custom.cmsl_wrapper_padding_self{
+        padding-left:10px!important;
+        padding-right:10px!important;
+    }
+}
+
+@media (max-width: 1365px){
+    .cmsl_razdsite h1{
+        font-size:2.5rem;
+    }
+
+	.cmsl_theme2_content_col2{
+		width:300px;
+		flex:0 1 300px;
+		margin-left:20px;
+	}
+
+    /*own sladkie-sani*/
+	.cmsl_theme1_content_wrap{
+	    background-size:100% auto;
+    }
+}
+
+@media (max-width: 1280px){
+	.cmsl_theme2_content_col2{
+		width:250px;
+		flex:0 1 250px;
+		margin-left:20px;
+	}
+
+    .cmsl_wrapper_padding{
+        padding-left:10px!important;
+        padding-right:10px!important;
+    }
+
+    .cmsl_wrapper_padding2{
+        padding-left:5px!important;
+        padding-right:5px!important;
+    }
+
+    .cmsl_wrapper1.cmsl_wrapper_padding_self{
+        padding-left:10px!important;
+        padding-right:10px!important;
+    }
+}
+
+@media (max-width: 1023px){    
+    .cmsl_theme3_content{
+        display:block;
+    }
+    .cmsl_theme3_content_col1{
+        margin:0;
+        padding:0;
+        float:none;
+        width:100%;
+    }
+    .cmsl_theme3_content_col2{
+        margin:0;
+        padding:0;
+        float:none;
+        width:100%;
+        margin-top:25px;
+    }
+
+    .cmsl_wrapper1{
+        max-width:992px;
+    }
+    .cmsl_wrapper2{
+        max-width:992px;
+    }
+
+	.cmsl_theme2_content{
+		display:block;
+	}
+	.cmsl_theme2_content_col2{
+		display:block;
+		max-width:400px;		
+		width:100%;
+		flex:1;
+		margin:0;
+		margin-top:25px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+    .zag1{
+        font-size:1.7rem;
+    }
+
+    .cmsl_theme_breadrazd_wrap_inner{
+        padding-top:15px;
+    }
+    .cmsl_theme_breadrazd_wrap .cmsl_razdsite{
+        margin-top:15px;
+    }
+
+    .bread_crumb,
+    .bread_crumb *{
+		font-size:14px;
+    }
+}
+
+@media (max-width: 768px){
+    .cmsl_wrapper1{
+        max-width:100%;
+    }
+    .cmsl_wrapper2{
+        max-width:100%;
+    }
+
+    .cmsl_razdsite{
+        margin-bottom:30px;
+		margin-top:10px;
+    }
+    .cmsl_razdsite h1{
+        font-size:1.9rem;
+    }
+	.bread_crumb{
+		margin-bottom:10px;
+	}
+}
+
+@media (max-width: 767px){
+    .cmsl_pagenav_move{
+        display:none;
+    }
+    .cmsl_pagenav_title{
+        font-size:13px;
+    }
+
+    .site_dialog_theme{
+        padding:40px 15px 30px 15px;
+    }
+    .site_dialog_theme_title{
+        font-size:23px;
+    }
+    .site_dialog_theme_content{
+        margin-top:20px;
+    }
+
+    .zag1{
+        font-size:1.5rem;
+    }
+
+    .bread_crumb,
+    .bread_crumb *{
+		font-size:13px;
+    }
+}
+
+@media (max-width: 480px){
+    html,body{
+        font-size:15px;
+        line-height:1.5;
+    }
+    .cmsl_razdsite h1{
+        font-size:1.8rem;
+    }
+
+    .site_dialog_theme{
+        padding-left:10px;
+        padding-right:10px;
+    }
+}

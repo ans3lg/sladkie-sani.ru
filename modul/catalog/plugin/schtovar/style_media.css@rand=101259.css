@@ -1,0 +1,27 @@
+@media (max-width: 1023px){    
+    .catalog__schtovar_page_filterhub_inside{
+        margin-top:-5px;
+    }
+    .catalog__schtovar_page_filterhub_inside_model_list_item{
+        margin-right:10px;
+        margin-bottom:7px;
+    }
+    .catalog__schtovar_page_filterhub_inside_model_list_item a{
+        font-size:15px;
+        line-height:1.1;
+        padding:6px 10px;
+    }
+}
+
+@media (max-width: 767px){
+    .catalog__schtovar_page_infohub_sort_list{
+        display:none;
+    }
+    .catalog__schtovar_page_filterhub{
+        display:none;
+    }
+    
+    .catalog__schtovar_page_infohub_cont{
+        padding:7px 10px;
+    }
+}

@@ -1,0 +1,82 @@
+.sendparamunion{
+    display:none;
+}
+
+@keyframes pulse_animation{
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.zakazonline_button0{
+    position:relative;
+    display:inline-block;
+    border:0;
+    outline:0;
+    font-size:17px;
+    line-height:1;
+    color:#4b2e13;
+    padding:7px 10px;
+    border-radius:3px;
+    cursor:pointer;
+    min-width:150px;
+    text-align:center;
+    text-decoration:none!important;
+
+    /* http://colorzilla.com/gradient-editor/#ffd200+0,ffb400+100 */
+    background:#ffd200;
+    background:-moz-linear-gradient(top, #ffd200 0%, #ffb400 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffd200), color-stop(100%, #ffb400));
+    background:-webkit-linear-gradient(top, #ffd200 0%, #ffb400 100%);
+    background:-o-linear-gradient(top, #ffd200 0%, #ffb400 100%);
+    background:-ms-linear-gradient(top, #ffd200 0%, #ffb400 100%);
+    background:linear-gradient(to bottom, #ffd200 0%, #ffb400 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd200', endColorstr='#ffb400', GradientType=0);
+}
+.zakazonline_button0:hover{
+    color:#000;
+    background:#ffb400;
+    background:-moz-linear-gradient(top, #ffb400 0%, #ffd200 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffb400), color-stop(100%, #ffd200));
+    background:-webkit-linear-gradient(top, #ffb400 0%, #ffd200 100%);
+    background:-o-linear-gradient(top, #ffb400 0%, #ffd200 100%);
+    background:-ms-linear-gradient(top, #ffb400 0%, #ffd200 100%);
+    background:linear-gradient(to bottom, #ffb400 0%, #ffd200 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb400', endColorstr='#ffd200', GradientType=0);
+
+    animation-name:pulse_animation;
+    animation-duration:300ms;
+    animation-delay:100ms;
+    animation-iteration-count:1;
+    animation-timing-function:linear;
+}
+.zakazonline_button0:active{
+    top:1px;
+}
+
+
+.zakazonline_button{
+    position:relative;
+    background:#ff9908;
+    font-size:16px;
+    line-height:1;
+    color:#fff;
+    display:inline-block;
+    padding:10px 25px;
+    max-width:300px;
+    text-decoration:none;
+}
+.zakazonline_button:hover{
+    color:#fff;
+    text-decoration:none;
+    background:#ffa526;
+}
+.zakazonline_button:active{
+    top:1px;
+}

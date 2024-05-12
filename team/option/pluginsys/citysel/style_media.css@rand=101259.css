@@ -1,0 +1,22 @@
+/*925 because need*/
+@media (max-width: 925px){
+    .citysel_dialog_content{
+        padding-left:25px;
+    }
+    .citysel_dialog_chunk{
+        display:block;
+    }
+    .citysel_dialog_chunk_item{
+        margin-top:9px;
+    }
+    .citysel_dialog_chunk_item:nth-child(1){
+        margin-top:0;
+    }
+    .citysel_dialog_list_item{
+        margin-top:7px;
+        text-align:center;
+    }
+    .citysel_dialog_list_item_link{
+        font-size:15px;
+    }
+}

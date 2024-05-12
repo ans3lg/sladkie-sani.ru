@@ -1,0 +1,28 @@
+@media (max-width: 767px){
+    .catalog_tovar_view_grade_table_free table td{
+        padding:5px;
+    }
+    .catalog_tovar_view_grade_table_free table thead td{
+        font-size:13px;
+    }
+    .catalog_tovar_view_grade_table_free .tr_item td{
+        font-size:13px;
+    }
+    .catalog_tovar_view_grade_table_free table .td_id{
+        width:30px;
+        padding-left:3px;
+        padding-right:3px;
+    }
+    .catalog_tovar_view_grade_table_free .tr_group td{
+        padding-top:10px;
+        padding-bottom:5px;
+    }
+    .catalog_tovar_view_grade_table_free table .td_count{
+        width:60px;
+        padding-left:3px;
+        padding-right:3px;
+    }
+    .catalog_tovar_view_grade_table_free .tr_group td{
+        font-size:14px;
+    }
+}

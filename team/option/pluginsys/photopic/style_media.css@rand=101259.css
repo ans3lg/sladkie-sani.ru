@@ -1,0 +1,21 @@
+@media (max-width: 1365px){
+	.photopic_photo_list4_item_zoom{
+		display:none;
+	}
+}
+
+@media (max-width: 1023px){
+    .photopic_photo_list4_item{
+        width:50%;
+    }
+}
+
+@media (max-width: 767px){
+    .photopic_photo_list4{
+        margin-left:-5px;
+        margin-right:-5px;
+    }
+    .photopic_photo_list4_item{
+        padding:5px;
+    }
+}

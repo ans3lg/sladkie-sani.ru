@@ -1,0 +1,238 @@
+.cmsl_adaptive__adaptive_just_show{
+	display:none!important;
+}
+
+@media (max-width:1023px){
+    .cmsl_adaptive_table1{
+        border:0;
+        width:100%!important;
+        height:auto!important;
+        display:table!important;
+    }
+    .cmsl_adaptive_table1 tr,
+    .cmsl_adaptive_table1 thead,
+    .cmsl_adaptive_table1 tbody,
+    .cmsl_adaptive_table1 tfoot{
+        display:block;
+    }
+    .cmsl_adaptive_table1 td{
+        display:block;
+		width:100%!important;
+    }
+
+    .cmsl_adaptive_table_wrap_column_default table{
+        border:0;
+        width:100%!important;
+        height:auto!important;
+        display:block!important;
+    }
+    .cmsl_adaptive_table_wrap_column_default tr,
+    .cmsl_adaptive_table_wrap_column_default thead,
+    .cmsl_adaptive_table_wrap_column_default tbody,
+    .cmsl_adaptive_table_wrap_column_default tfoot{
+        display:block!important;
+    }
+    .cmsl_adaptive_table_wrap_column_default td{
+        display:block!important;
+		width:100%!important;
+    }
+
+    .cmsl_adaptive_block1 > div{
+        display:block!important;
+        float:none!important;
+        width:100%!important;
+        margin:0;
+        padding:0;
+        margin-top:25px;
+    }
+
+    .cmsl_adaptive_block_wrap1{
+        max-width:100%;
+        overflow-y:hidden;
+        overflow-x:scroll;
+        -ms-overflow-style:-ms-autohiding-scrollbar;
+        -webkit-overflow-scrolling:touch;
+    }
+    .cmsl_adaptive_block_wrap1 > div{
+        min-width:630px;
+    }
+
+    .cmsl_adaptive_table_wrap1{
+        max-width:100%;
+        overflow-y:hidden;
+        overflow-x:scroll;
+        -ms-overflow-style:-ms-autohiding-scrollbar;
+        -webkit-overflow-scrolling:touch;
+    }
+    /*
+    .cmsl_adaptive_table_wrap1 table{
+        min-width:630px;
+    }
+    */
+
+    .cmsl_adaptive_table_wrap2 table{
+        width:100%!important;
+        height:auto!important;
+    }
+    .cmsl_adaptive_table_wrap2 table,
+    .cmsl_adaptive_table_wrap2 table *,
+    .cmsl_adaptive_table_wrap2 table td{
+        font-size:calc(9px + 0.5vw)!important;
+    }
+
+    .cmsl_adaptive_table_wrap2_b table{
+        width:100%!important;
+        height:auto!important;
+    }
+    .cmsl_adaptive_table_wrap2_b table,
+    .cmsl_adaptive_table_wrap2_b table *,
+    .cmsl_adaptive_table_wrap2_b table td{
+        font-size:calc(8px + 0.5vw)!important;
+    }
+
+    .cmsl_adaptive_table_wrap2_c table{
+        width:100%!important;
+        height:auto!important;
+    }
+    .cmsl_adaptive_table_wrap2_c table,
+    .cmsl_adaptive_table_wrap2_c table *,
+    .cmsl_adaptive_table_wrap2_c table td{
+        font-size:calc(10px + 0.5vw)!important;
+    }
+
+    .cmsl_adaptive_image1{
+        max-width:100%!important;
+        height:auto!important;
+    }
+
+    .cmsl_adaptive_wrap_image img{
+        max-width:100%!important;
+        height:auto!important;
+    }
+
+    .cmsl_adaptive_table_wrap_column_duo table{
+        border:0;
+        width:100%!important;
+        height:auto!important;
+        display:block!important;
+    }
+    .cmsl_adaptive_table_wrap_column_duo tr,
+    .cmsl_adaptive_table_wrap_column_duo thead,
+    .cmsl_adaptive_table_wrap_column_duo tbody,
+    .cmsl_adaptive_table_wrap_column_duo tfoot{
+        display:block!important;
+    }
+    .cmsl_adaptive_table_wrap_column_duo td{
+        display:block!important;
+		width:100%!important;
+    }
+    .cmsl_adaptive_table_wrap_column_duo tr{
+        display:flex!important;
+        flex-wrap:wrap!important;
+    }
+    .cmsl_adaptive_table_wrap_column_duo td{
+        width:50%!important;
+        margin-bottom:20px!important;
+        padding:1% 2.5%!important;
+    }
+    .cmsl_adaptive_table_wrap_column_duo td:nth-child(2n+1){
+        padding-left:0!important;
+    }
+    .cmsl_adaptive_table_wrap_column_duo td:nth-child(2n){
+        padding-right:0!important;
+    }
+
+    .cmsl_adaptive_table_wrap_td_padding_0 table td{
+        padding:0!important;
+    }
+    .cmsl_adaptive_table_wrap_td_padding_5 table td{
+        padding:5px!important;
+    }
+
+    .cmsl_adaptive_table_wrap_min_width_700 table{
+        min-width:700px;
+    }
+
+    .cmsl_adaptive_content_center{
+        text-align:center;
+    }
+
+    .cmsl_adaptive__adaptive_just_show{
+		display:block!important;
+	}
+	.cmsl_adaptive__adaptive_just_hide,
+	table.cmsl_adaptive__adaptive_just_hide,
+	td.cmsl_adaptive__adaptive_just_hide,
+	tr.cmsl_adaptive__adaptive_just_hide,
+	thead.cmsl_adaptive__adaptive_just_hide,
+	tbody.cmsl_adaptive__adaptive_just_hide,
+	tfoot.cmsl_adaptive__adaptive_just_hide{
+		display:none!important;
+	}
+
+	.cmsl_adaptive_table_wrap_tr_margin_bottom_20 table tr{
+	    margin-bottom:20px!important;
+    }
+	.cmsl_adaptive_table_wrap_tr_margin_bottom_40 table tr{
+	    margin-bottom:40px!important;
+    }
+
+	.cmsl_adaptive_table_wrap_td_margin_bottom_20 table td{
+	    margin-bottom:20px!important;
+    }
+	.cmsl_adaptive_table_wrap_td_margin_bottom_40 table td{
+	    margin-bottom:40px!important;
+    }
+
+	.cmsl_adaptive_table_wrap_td_border_none table td{
+		border:0!important;
+	}
+
+    .cmsl_adaptive_table_wrap_column_one table,
+    .cmsl_adaptive_table_wrap_column_one tr,
+    .cmsl_adaptive_table_wrap_column_one thead,
+    .cmsl_adaptive_table_wrap_column_one tbody,
+    .cmsl_adaptive_table_wrap_column_one tfoot,
+    .cmsl_adaptive_table_wrap_column_one td{
+        display:block;
+        width:100%;
+    }
+    .cmsl_adaptive_table_wrap_column_one tr{
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .cmsl_adaptive_table_wrap_column_one td{
+        width:100%!important;
+        margin-bottom:30px!important;
+        padding:1% 0!important;
+    }
+}
+
+@media (max-width: 767px){
+    .cmsl_adaptive2_font_percent_increase_10{
+        font-size:110%;
+    }
+    .cmsl_adaptive2_font_percent_decrease_10{
+        font-size:90%;
+    }
+}
+
+@media (max-width: 359px){
+    .cmsl_adaptive_table_wrap2 table,
+    .cmsl_adaptive_table_wrap2 table *,
+    .cmsl_adaptive_table_wrap2 table td{
+        font-size:calc(8px + 0.5vw)!important;
+    }
+
+    .cmsl_adaptive_table_wrap2_b table,
+    .cmsl_adaptive_table_wrap2_b table *,
+    .cmsl_adaptive_table_wrap2_b table td{
+        font-size:calc(7px + 0.5vw)!important;
+    }
+
+    .cmsl_adaptive_table_wrap2_c table,
+    .cmsl_adaptive_table_wrap2_c table *,
+    .cmsl_adaptive_table_wrap2_c table td{
+        font-size:calc(9px + 0.5vw)!important;
+    }
+}

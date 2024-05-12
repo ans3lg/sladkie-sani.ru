@@ -1,0 +1,19 @@
+.adaptivetoggle{
+    margin-top:25px;
+    display:none;
+    text-align:center;
+    color:#dadada;
+}
+.adaptivetoggle a{
+    font-size:14px;
+    line-height:1;
+    color:#dadada;
+    text-decoration:underline;
+}
+.adaptivetoggle a:hover{
+    color:#dadada;
+    text-decoration:none;
+}
+a.adaptivetoggle_desctop{
+    font-size:35px;
+}

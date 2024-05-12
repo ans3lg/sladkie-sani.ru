@@ -1,0 +1,40 @@
+@media (max-width: 1023px){
+    .dialogred_data{
+         min-height:400px;
+    }
+}
+
+@media (max-width: 767px){
+    .dialogred_close2{
+        top:10px;
+        right:10px;
+    }
+    .dialogred_close2_img{
+        width:25px;
+        height:25px;
+        background-size:25px 25px;
+    }
+    .dialogred_inner{
+        width:calc(100% - 20px);
+    }
+
+    .dialogred_data{
+        min-height:500px;
+    }
+}
+
+@media (max-width: 480px){
+    .dialogred_data{
+        min-height:250px;
+    }
+
+    .dialogred_close{
+        top:10px;
+        right:10px;
+    }
+    .dialogred_close_img{
+        width:26px;
+        height:26px;
+        background-size:contain;
+    }
+}
