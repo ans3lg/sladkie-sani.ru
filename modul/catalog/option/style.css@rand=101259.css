@@ -2912,6 +2912,10 @@
 .catalog__tovar_view_action_inbox_cont_box1{
     width:50%;
     padding:30px 30px 50px 30px;
+    margin: 0 auto;
+}
+.catalog__tovar_view_action_inbox_cont_box1 td {
+    padding-left: 50px;
 }
 .catalog__tovar_view_action_inbox_cont_box2{
     flex:1;

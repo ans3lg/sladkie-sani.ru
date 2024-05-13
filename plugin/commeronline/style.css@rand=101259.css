@@ -2,7 +2,7 @@
     position:relative;
 }
 .commeronline_result{
-    display:none;
+    display:block;
 	position:absolute;
 	top:15%;
 	left:0px;

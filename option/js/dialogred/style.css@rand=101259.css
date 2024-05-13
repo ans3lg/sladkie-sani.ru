@@ -1,10 +1,4 @@
-/*
-body.modal[data-data-devicelab_gadget_bool="1"]{
-    position:fixed;
-    height: 100%;
-    width:100%;
-}
-*/
+/* 
 
 .dialogred_modal{
     position:absolute;
@@ -88,11 +82,7 @@ body.modal[data-data-devicelab_gadget_bool="1"]{
     -o-transition:all 0.4s ease-out 0s;
     transition:all 0.4s ease-out 0s;
 
-    /*
-    -webkit-transform: translateY(900px);
-    -ms-transform: translateY(900px);
-    transform: translateY(900px);
-    */
+    
 
     will-change:top,transform;
 }
@@ -105,11 +95,6 @@ body.modal[data-data-devicelab_gadget_bool="1"]{
 }
 .body_dialogred_inner_show .dialogred_modal[data-adjust="default"] .dialogred_inner{
     opacity:1;
-    /*
-    -webkit-transform:translateY(0);
-    -ms-transform:translateY(0);
-    transform:translateY(0);
-    */
     top:0;
 }
 
@@ -266,13 +251,6 @@ body.modal[data-data-devicelab_gadget_bool="1"]{
     height:100%;
     -webkit-filter:blur(12px);
     filter:blur(12px);
-
-    /*
-    transition: opacity .5s ease-out;
-    opacity: 1;
-    overflow: hidden;
-    min-height: 100%;
-    */
 }
 
 .body_dialogred_open .dialogred_modal{
@@ -287,4 +265,4 @@ body.modal[data-data-devicelab_gadget_bool="1"]{
 
 .dialogred_data{
     min-height:400px;
-}
+} */
