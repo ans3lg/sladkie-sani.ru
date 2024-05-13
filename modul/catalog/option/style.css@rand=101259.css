@@ -2649,7 +2649,7 @@
 }
 
 .catalog__cat_tovar_list1_item{
-    margin-top:55px;
+    margin-bottom:55px;
 }
 .catalog__cat_tovar_list1_item:nth-child(1){
     margin:0;

@@ -94,7 +94,8 @@ input[type="file"] > input[type="button"]::-moz-focus-inner{
 }
 
 .cmsl_content{
-	min-height:200px;
+	margin-bottom: 40px;
+    text-align: center;
 }
 
 .posmo{
