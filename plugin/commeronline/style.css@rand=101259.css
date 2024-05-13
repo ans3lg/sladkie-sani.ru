@@ -1,16 +1,17 @@
 .commeronline_inner{
     position:relative;
 }
-.commeronline_result{
-    display:block;
-	position:absolute;
-	top:15%;
-	left:0px;
-	width:100%;
-	text-align:center;
-	font-size:25px;
-	line-height:1.4;
-	color:#00942c;
+.commeronline_result {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto; /* или задайте фиксированную ширину, если нужно */
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.4;
+    color: #00942c;
 }
 .commeronline_form_wrap{
 	position:relative;
