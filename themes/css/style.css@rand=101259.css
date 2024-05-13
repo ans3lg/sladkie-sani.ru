@@ -890,9 +890,8 @@ body[data-page="default"] .footer_basic {
   padding: 60px 0;
 }
 
-.cards {
-  display: flex;
-  flex-wrap: wrap;
+.splide__list {
+  /* display: flex; */
   gap: 52px;
   max-width: 1440px;
   margin: 0 auto;
