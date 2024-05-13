@@ -1,13 +1,18 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var openModalBtn = document.getElementById('openCustomModalBtn');
-    var modal = document.querySelector('.dialogred_modal[data-theme="commeronline_ng"]');
-    
-    if (openModalBtn && modal) {
-        openModalBtn.addEventListener('click', openCustomModal);
-    }
+function openModal() {
+    $('#modalWindow').fadeIn();
+}
 
-    function openCustomModal() {
-        modal.style.display = 'block';
-        document.body.classList.add('body_dialogred_inner_show');
-    }
+// Function to close the modal
+function closeModal() {
+    $('#modalWindow').fadeOut();
+}
+
+// Event listener for opening the modal
+$('#openModalBtn').click(function() {
+    openModal();
+});
+
+// Event listener for closing the modal
+$('.dialogred_close_esh').click(function() {
+    closeModal();
 });
