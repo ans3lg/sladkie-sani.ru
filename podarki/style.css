@@ -2,10 +2,10 @@
   display: none;
 }
 
-.filter{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
+.filter {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 
 .show {
@@ -36,16 +36,31 @@
   color: rgb(0, 0, 0);
 }
 
-.catalog__cat_tovar_list1_item1{
-    margin-bottom: 55px;
+.catalog__cat_tovar_list1_item1 {
+  margin-bottom: 55px;
 }
 
 @media screen and (max-width: 768px) {
-    .filter{
-        flex-direction: column;
-        margin-top: 10px;
-    }
-    .btn{
-        font-size: 14px;
-    }
+  .filter {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .btn {
+    font-size: 14px;
+  }
+}
+
+.catalog__basket_formtovar_korzina2 input[type="text"] {
+  width: 70px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px #949494 solid;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+}
+
+.svyaz{
+  text-align: center;
 }

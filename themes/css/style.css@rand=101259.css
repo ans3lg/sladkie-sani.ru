@@ -1079,3 +1079,17 @@ body[data-page="default"] .footer_basic {
   text-decoration: none !important;
   border-radius: 20px;
 }
+
+.logo_footer img{
+  margin-top: 30px;
+  width: 250px;
+}
+
+.social_media{
+  display: flex;
+  gap: 15px;
+}
+
+.social_media a img{
+  width: 40px;
+}

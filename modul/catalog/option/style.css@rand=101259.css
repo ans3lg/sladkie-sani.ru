@@ -1058,6 +1058,7 @@
 .catalog__basket_action_oform_manager_list{
     display:flex;
     flex-wrap:wrap;
+    justify-content: center;
 }
 .catalog__basket_action_oform_manager_list_item{
     width:170px;
