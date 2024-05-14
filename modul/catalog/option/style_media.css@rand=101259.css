@@ -655,30 +655,19 @@
   }
 
   .catalog__tovar_list1 {
-    max-width: 680px;
-    margin-left: auto;
-    margin-right: auto;
+    display: block;
+    margin: 0 auto;
+    max-width: 340px;
   }
   .catalog__tovar_list1_item {
-    width: 50%;
+    margin: 0;
+    padding: 10px 0;
+    width: 100%;
+  }
+  .catalog__tovar_list1_item_inner {
+    padding: 20px 15px 15px 15px;
   }
 
-  .catalog__tovar_list1_item_but_button{
-    font-size: 14px;
-    min-width:100px;
-    max-width:150px;
-    background:#5db7b9;
-    user-select:none;
-    transition:background 0.2s ease-out 0s;
-    border:0;
-    margin:0;
-    outline:0;
-    border-radius:20px;
-  }
-
-  .catalog__tovar_list1_item_in_card2_button_wrap a{
-    width: 10px;
-  }
   .catalog__tovar_view_action_inbox_cont_box1 {
     padding: 15px 10px 25px 10px;
   }
