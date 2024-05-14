@@ -1,41 +1,3 @@
-.filterDiv {
-  display: none;
-}
-
-.filter {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-}
-
-.show {
-  display: block;
-}
-
-.container {
-  margin-top: 20px;
-  overflow: hidden;
-}
-
-/* Стиль кнопок */
-.btn {
-  outline: none;
-  padding: 12px 16px;
-  background-color: #ffffff;
-  cursor: pointer;
-  font-size: 16px;
-  font-family: proximanovareg;
-  border: 1px solid #000;
-  transition: all 0.3s;
-  border-radius: 10px;
-}
-
-.btn:hover {
-  background-color: #f0f0f0;
-  transition: all 0.3s;
-  color: rgb(0, 0, 0);
-}
-
 .catalog__cat_tovar_list1_item1 {
   margin-bottom: 55px;
 }
@@ -61,6 +23,104 @@
   text-align: center;
 }
 
-.svyaz{
+.svyaz {
   text-align: center;
+}
+
+.filter-form {
+  margin-bottom: 20px;
+}
+
+.filter-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.filter-form input {
+  width: 100px;
+}
+
+/* Стили для кнопок фильтра */
+.file-for-button{
+  display: flex;
+  justify-content: end;
+}
+
+.filter-button{
+  margin: 0;
+  padding: 0;
+}
+
+.filter-sidebar {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.filter-sidebar.active {
+  display: block;
+}
+
+/* Стили для кнопки фильтра */
+.filter-button {
+  cursor: pointer;
+  fill: #000;
+  width: 80px;
+  height: 30px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  fill: #0000009e;
+  width: 40px;
+}
+.catalog__cat_tovar_list1_item {
+  display: block; /* По умолчанию все товары видимы */
+}
+
+.form_label{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.filter_filter_button{
+  width: 47%;
+  height: 30px;
+  background: #ffffff;
+  border: 1px solid #333;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.filter_filter_button:hover{
+  background: #ededed;
+}
+
+.category{
+  margin-top: 30px;
+  /* margin-bottom: -20px; */
+}
+
+.category_select{
+  width: 100%;
+}
+
+.cmsl_theme_breadrazd_wrap_podarki{
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+  padding-top:25px;
+  position:relative;
 }

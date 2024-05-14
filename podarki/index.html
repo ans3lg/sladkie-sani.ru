@@ -85,82 +85,90 @@
             <div class="commeronline_ng_body_inner">
                 <div class="commeronline_form_header">
                     <div class="commeronline_zagol1">
-                        <span class="commeronline_zagol1_span1">Запрос</span> на коммерческое предложение                    </div>
+                        <span class="commeronline_zagol1_span1">Запрос</span> на коммерческое предложение
+                    </div>
                 </div>
 
                 <div class="commeronline_form_wrap">
                     <div class="commeronline_form_wrap2">
                         <form action="https://formspree.io/f/mgegqzpp" method="POST" class="commeronline_form">
-                            <input type="hidden" name="zagol1" value="Запрос на коммерческое предложение" autocomplete="off">
+                            <input type="hidden" name="zagol1" value="Запрос на коммерческое предложение"
+                                autocomplete="off">
                             <input type="hidden" name="zagol2" value="" autocomplete="off">
 
                             <div class="commeronline_form_content">
                                 <div class="commeronline_ng_cont1">
                                     <div class="commeronline_ng_cont1_box1">
-                                        <div class="commeronline_ng_cont1_box1_formblock commeronline_label" data-label_key="name">
-                                            <input type="text" name="name" id="name" placeholder="Как вас зовут?" class="commeronline_input1" autocomplete="off">
+                                        <div class="commeronline_ng_cont1_box1_formblock commeronline_label"
+                                            data-label_key="name">
+                                            <input type="text" name="name" id="name" placeholder="Как вас зовут?"
+                                                class="commeronline_input1" autocomplete="off">
                                         </div>
                                         <div class="commeronline_ng_cont1_box1_formblock commeronline_label">
-                                            <input type="text" name="city" id="city" placeholder="Введите город" class="commeronline_input1" autocomplete="off">
+                                            <input type="text" name="city" id="city" placeholder="Введите город"
+                                                class="commeronline_input1" autocomplete="off">
                                         </div>
-                                        <div class="commeronline_ng_cont1_box1_formblock commeronline_label" data-label_key="tel">
-                                            <input type="tel" name="tel" id="tel" placeholder="Введите телефон" class="commeronline_input1" autocomplete="off">
+                                        <div class="commeronline_ng_cont1_box1_formblock commeronline_label"
+                                            data-label_key="tel">
+                                            <input type="tel" name="tel" id="tel" placeholder="Введите телефон"
+                                                class="commeronline_input1" autocomplete="off">
                                         </div>
                                         <div class="commeronline_ng_cont1_box1_formblock commeronline_label">
-                                            <input type="email" name="email" id="email" placeholder="Введите e-mail" class="commeronline_input1" autocomplete="off">
+                                            <input type="email" name="email" id="email" placeholder="Введите e-mail"
+                                                class="commeronline_input1" autocomplete="off">
                                         </div>
-                                        
-                                        
+
+
                                         <script>
                                             function validateForm() {
                                                 var name = document.getElementById('name').value;
                                                 var city = document.getElementById('city').value;
                                                 var tel = document.getElementById('tel').value;
                                                 var email = document.getElementById('email').value;
-                                        
+
                                                 // Проверка на пустые поля
                                                 if (name === "" || city === "" || tel === "" || email === "") {
                                                     alert("Пожалуйста, заполните все поля");
                                                     return false;
                                                 }
-                                        
+
                                                 // Проверка корректности email
                                                 var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                                                 if (!email.match(emailRegex)) {
                                                     alert("Пожалуйста, введите корректный email адрес");
                                                     return false;
                                                 }
-                                        
+
                                                 // Проверка корректности телефона (простая проверка на количество символов)
                                                 if (tel.length < 6) {
                                                     alert("Пожалуйста, введите корректный номер телефона");
                                                     return false;
                                                 }
-                                        
+
                                                 // Все проверки пройдены
                                                 alert("Форма успешно заполнена!");
-                                        
+
                                                 // Сброс значений полей ввода
                                                 document.getElementById('name').value = "";
                                                 document.getElementById('city').value = "";
                                                 document.getElementById('tel').value = "";
                                                 document.getElementById('email').value = "";
-                                        
+
                                                 // Закрытие модального окна
                                                 var modal = document.getElementById('myModal_podbor');
                                                 modal.style.display = "none";
-                                        
+
                                                 return true;
                                             }
                                         </script>
-                                        
+
 
 
                                         <script>
-                                            $('.commeronline_selbox1 select').on('change',function(){
-                                                if ($(this).val()){
-                                                    return $(this).css('color','#000');
-                                                }else{
+                                            $('.commeronline_selbox1 select').on('change', function () {
+                                                if ($(this).val()) {
+                                                    return $(this).css('color', '#000');
+                                                } else {
                                                     return $(this).css('color', '#737373');
                                                 }
                                             });
@@ -177,12 +185,17 @@
                                                 <div class="commeronline_ng_discuss_list_item">
                                                     <div class="commeronline_ng_discuss_styling_checkbox">
                                                         <label>
-                                                            <input type="checkbox" name="discuss[]" value="Картонная упаковка" autocomplete="off">
-                                                            <div class="commeronline_ng_discuss_styling_checkbox_cont_virt">
-                                                                <div class="commeronline_ng_discuss_styling_checkbox_pip">
-                                                                    <span class="commeronline_ng_discuss_styling_checkbox_pip_v"></span>
+                                                            <input type="checkbox" name="discuss[]"
+                                                                value="Картонная упаковка" autocomplete="off">
+                                                            <div
+                                                                class="commeronline_ng_discuss_styling_checkbox_cont_virt">
+                                                                <div
+                                                                    class="commeronline_ng_discuss_styling_checkbox_pip">
+                                                                    <span
+                                                                        class="commeronline_ng_discuss_styling_checkbox_pip_v"></span>
                                                                 </div>
-                                                                <div class="commeronline_ng_discuss_styling_checkbox_tx">
+                                                                <div
+                                                                    class="commeronline_ng_discuss_styling_checkbox_tx">
                                                                     Картонная упаковка
                                                                 </div>
                                                             </div>
@@ -193,12 +206,17 @@
                                                 <div class="commeronline_ng_discuss_list_item">
                                                     <div class="commeronline_ng_discuss_styling_checkbox">
                                                         <label>
-                                                            <input type="checkbox" name="discuss[]" value="Жестяная упаковка" autocomplete="off">
-                                                            <div class="commeronline_ng_discuss_styling_checkbox_cont_virt">
-                                                                <div class="commeronline_ng_discuss_styling_checkbox_pip">
-                                                                    <span class="commeronline_ng_discuss_styling_checkbox_pip_v"></span>
+                                                            <input type="checkbox" name="discuss[]"
+                                                                value="Жестяная упаковка" autocomplete="off">
+                                                            <div
+                                                                class="commeronline_ng_discuss_styling_checkbox_cont_virt">
+                                                                <div
+                                                                    class="commeronline_ng_discuss_styling_checkbox_pip">
+                                                                    <span
+                                                                        class="commeronline_ng_discuss_styling_checkbox_pip_v"></span>
                                                                 </div>
-                                                                <div class="commeronline_ng_discuss_styling_checkbox_tx">
+                                                                <div
+                                                                    class="commeronline_ng_discuss_styling_checkbox_tx">
                                                                     Жестяная упаковка
                                                                 </div>
                                                             </div>
@@ -209,12 +227,17 @@
                                                 <div class="commeronline_ng_discuss_list_item">
                                                     <div class="commeronline_ng_discuss_styling_checkbox">
                                                         <label>
-                                                            <input type="checkbox" name="discuss[]" value="Мягкая игрушка" autocomplete="off">
-                                                            <div class="commeronline_ng_discuss_styling_checkbox_cont_virt">
-                                                                <div class="commeronline_ng_discuss_styling_checkbox_pip">
-                                                                    <span class="commeronline_ng_discuss_styling_checkbox_pip_v"></span>
+                                                            <input type="checkbox" name="discuss[]"
+                                                                value="Мягкая игрушка" autocomplete="off">
+                                                            <div
+                                                                class="commeronline_ng_discuss_styling_checkbox_cont_virt">
+                                                                <div
+                                                                    class="commeronline_ng_discuss_styling_checkbox_pip">
+                                                                    <span
+                                                                        class="commeronline_ng_discuss_styling_checkbox_pip_v"></span>
                                                                 </div>
-                                                                <div class="commeronline_ng_discuss_styling_checkbox_tx">
+                                                                <div
+                                                                    class="commeronline_ng_discuss_styling_checkbox_tx">
                                                                     Мягкая игрушка
                                                                 </div>
                                                             </div>
@@ -225,12 +248,18 @@
                                                 <div class="commeronline_ng_discuss_list_item">
                                                     <div class="commeronline_ng_discuss_styling_checkbox">
                                                         <label>
-                                                            <input type="checkbox" name="discuss[]" value="Подберите мне индивидуальную упаковку :)" autocomplete="off">
-                                                            <div class="commeronline_ng_discuss_styling_checkbox_cont_virt">
-                                                                <div class="commeronline_ng_discuss_styling_checkbox_pip">
-                                                                    <span class="commeronline_ng_discuss_styling_checkbox_pip_v"></span>
+                                                            <input type="checkbox" name="discuss[]"
+                                                                value="Подберите мне индивидуальную упаковку :)"
+                                                                autocomplete="off">
+                                                            <div
+                                                                class="commeronline_ng_discuss_styling_checkbox_cont_virt">
+                                                                <div
+                                                                    class="commeronline_ng_discuss_styling_checkbox_pip">
+                                                                    <span
+                                                                        class="commeronline_ng_discuss_styling_checkbox_pip_v"></span>
                                                                 </div>
-                                                                <div class="commeronline_ng_discuss_styling_checkbox_tx">
+                                                                <div
+                                                                    class="commeronline_ng_discuss_styling_checkbox_tx">
                                                                     <b>Подберите мне индивидуальную упаковку :)</b>
                                                                 </div>
                                                             </div>
@@ -248,7 +277,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="commeronline_ng_formcont1_box2">
-                                                    <input type="text" name="budget" placeholder="" class="commeronline_input1" autocomplete="off">
+                                                    <input type="text" name="budget" placeholder=""
+                                                        class="commeronline_input1" autocomplete="off">
                                                     <span class="commeronline_ng_formcont1_unit">
                                                         рублей
                                                     </span>
@@ -266,7 +296,8 @@
                                                             </div>
                                                         </div>
                                                         <div class="commeronline_ng_formcont2_box2">
-                                                            <input type="text" name="weight" placeholder="" class="commeronline_input1" autocomplete="off">
+                                                            <input type="text" name="weight" placeholder=""
+                                                                class="commeronline_input1" autocomplete="off">
                                                             <span class="commeronline_ng_formcont1_unit">
                                                                 гр.
                                                             </span>
@@ -281,7 +312,8 @@
                                                             </div>
                                                         </div>
                                                         <div class="commeronline_ng_formcont2_box2">
-                                                            <input type="text" name="kolvo" placeholder="" class="commeronline_input1" autocomplete="off">
+                                                            <input type="text" name="kolvo" placeholder=""
+                                                                class="commeronline_input1" autocomplete="off">
                                                             <span class="commeronline_ng_formcont1_unit">
                                                                 шт
                                                             </span>
@@ -294,7 +326,8 @@
                                 </div>
 
                                 <div class="commeronline_ng_primech">
-                                    <textarea name="primech" placeholder="Текст сообщения" class="commeronline_textarea1"></textarea>
+                                    <textarea name="primech" placeholder="Текст сообщения"
+                                        class="commeronline_textarea1"></textarea>
                                 </div>
 
                                 <div class="commeronline_ng_cont_foot">
@@ -309,7 +342,8 @@
                                     <div class="commeronline_ng_cont_foot_box2">
                                         <div class="commeronline_rules">
                                             Нажимая на кнопку "Отправить" вы соглашаетесь с<br>
-                                            <a href="/personalnie-dannie/" target="_blank">условиями хранения персональных данных</a>
+                                            <a href="/personalnie-dannie/" target="_blank">условиями хранения
+                                                персональных данных</a>
                                         </div>
                                     </div>
                                 </div>
@@ -328,7 +362,7 @@
             </div>
         </div>
     </div>
-    
+
     <style>
         .modal {
             display: none;
@@ -341,6 +375,7 @@
             z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
 
         }
+
         .modal-content-podbor {
             width: 1288px;
             min-height: 923px;
@@ -349,9 +384,11 @@
             margin: 50px auto;
             position: relative;
         }
+
         #modal_podbor {
             cursor: pointer;
         }
+
         #close {
             cursor: pointer;
             position: absolute;
@@ -409,7 +446,7 @@
                         <div class="header1_basket_left">
                             <a href="basket/index.html">
                                 <div class="header1_basket_count">
-                                    <span class="header1_basket_count_value catalog__basket_dataget_kolvo">0</span>
+                                    <span class="header1_basket_count_value catalog__basket_dataget_kolvo">1</span>
                                 </div>
                                 <div class="header1_basket_icon">
                                     <img src="../file/i_pic/header1_basket_icon.svg" alt="">
@@ -438,7 +475,7 @@
                 <div class="header2_right">
                     <div class="header2_right_cont">
                         <div class="header2_right_podbor">
-                            <a  class="commeronline_action header2_right_podbor_button">
+                            <a class="commeronline_action header2_right_podbor_button">
                                 <span id="modal_podbor">Подобрать подарок</span>
                             </a>
                         </div>
@@ -455,7 +492,7 @@
         </div>
         <div class="cmsl_theme1">
             <div class="cmsl_theme_breadrazd_wrap">
-                <div class="cmsl_wrapper1 cmsl_wrapper_padding_self cmsl_theme_breadrazd_wrap_inner">
+                <div class="cmsl_wrapper1 cmsl_wrapper_padding_self cmsl_theme_breadrazd_wrap_podarki">
                     <div class="cmsl_razdsite">
                         <h1>Детские новогодние подарки</h1>
                     </div>
@@ -465,22 +502,58 @@
             <div class="cmsl_theme1_content_wrap"
                 style="background-image:url(../file/i_pic/themes_catalog_sladkie_sani_fon.jpg);">
                 <div class="cmsl_wrapper1 cmsl_wrapper_padding_self cmsl_theme1_content">
-                    <div class="cmsl_content cmsl_osntext">
-                        <div id="myBtnContainer" class="filter">
-                            <button class="btn active" onclick="filterSelection('all')"> Показать все</button>
-                            <button class="btn" onclick="filterSelection('myagkaya_igrushka')">Мягкая игрушка</button>
-                            <button class="btn" onclick="filterSelection('kartonnaya')">Картонная упаковка</button>
-                            <button class="btn" onclick="filterSelection('jestyanaya')">Жестяная упаковка и туба</button>
-                            <button class="btn" onclick="filterSelection('corporativ')">Корпоративные подарки</button>
-                        </div>
+                    <div class="file-for-button">
+                        <img src="../file/filter.svg" alt="filter" onclick="toggleFilter()" class="filter-button">
+                    </div>
+
+                    <div class="filter-sidebar" id="filterSidebar">
+                        <svg class="close-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            onclick="toggleFilter()">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M18.364 5.636a2 2 0 0 0-2.828 0L12 9.172 8.464 5.636a2 2 0 1 0-2.828 2.828L9.172 12l-3.536 3.536a2 2 0 1 0 2.828 2.828L12 14.828l3.536 3.536a2 2 0 1 0 2.828-2.828L14.828 12l3.536-3.536a2 2 0 0 0 0-2.828z" />
+                        </svg>
+                        <form class="filter-form" id="filterForm">
+                            <label for="category" class="category">По категориям:</label>
+                            <select id="category" class="category_select">
+                                <option value="">Все</option>
+                                <option value="myagkaya_igrushka">Мягкая игрушка</option>
+                                <option value="kartonnaya">Картонная упаковка</option>
+                                <option value="jestyanaya">Жестяная упаковка и туба</option>
+                                <option value="corporativ">Корпоративные подарки</option>
+                            </select>
+
+                            <div class="form_label">
+                                <label for="weightFrom">Вес от:</label>
+                                <input type="number" id="weightFrom" min="0" step="1">
+                            </div>
+                            <div class="form_label">
+                                <label for="weightTo">до:</label>
+                                <input type="number" id="weightTo" min="0" step="1">
+                            </div>
+                            <div class="form_label">
+                                <label for="priceFrom">Цена от:</label>
+                                <input type="number" id="priceFrom" min="0" step="1">
+                            </div>
+                            <div class="form_label">
+                                <label for="priceTo">до:</label>
+                                <input type="number" id="priceTo" min="0" step="1">
+                            </div>
+                            <div class="form_label">
+                                <button class="filter_filter_button" type="button"
+                                    onclick="applyFilters()">Применить</button>
+                                <button class="filter_filter_button" type="button"
+                                    onclick="clearFilters()">Очистить</button>
+                            </div>
+                        </form>
                     </div>
                     <div class="catalog_filter_dinamic_content">
                         <div class="catalog_filter_dinamic_content_inner">
                             <div class="catalog__cat_index_action">
                                 <div class="catalog__cat_index_action_list">
                                     <div class="catalog__cat_tovar_list1">
-                                        <div class="catalog__cat_tovar_list1_item1 filterDiv myagkaya_igrushka">
-                                            <div class="catalog__cat_tovar_list1_item_header myagkaya_igrushka">
+                                        <div class="catalog__cat_tovar_list1_item filterDiv myagkaya_igrushka">
+                                            <div class="catalog__cat_tovar_list1_item_header">
                                                 <div class="catalog__cat_tovar_list1_item_cat_name">Мягкая игрушка</div>
                                             </div>
                                             <div class="catalog__cat_tovar_list1_item_content">
@@ -1915,7 +1988,7 @@
                                         <div class="catalog__cat_tovar_list1_item filterDiv jestyanaya">
                                             <div class="catalog__cat_tovar_list1_item_header">
                                                 <div class="catalog__cat_tovar_list1_item_cat_name">Жестяная упаковка и
-                                                        туба</div>
+                                                    туба</div>
                                             </div>
                                             <div class="catalog__cat_tovar_list1_item_content">
                                                 <div class="catalog__cat_tovar_list1_item_tovar">
@@ -2462,7 +2535,7 @@
                                         <div class="catalog__cat_tovar_list1_item filterDiv corporativ">
                                             <div class="catalog__cat_tovar_list1_item_header">
                                                 <div class="catalog__cat_tovar_list1_item_cat_name">Корпоративные
-                                                        подарки</div>
+                                                    подарки</div>
                                             </div>
                                             <div class="catalog__cat_tovar_list1_item_content">
                                                 <div class="catalog__cat_tovar_list1_item_tovar">
@@ -3008,119 +3081,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="catalog__cat_index_action_list_adaptive" style="display:none;">
-                                    <div class="index_category">
-                                        <div class="index_category_inner">
-                                            <div class="index_category_list">
-                                                <div class="index_category_list_item" data-id="1"><a
-                                                        href="myagkaya-igrushka/index.html"
-                                                        class="index_category_list_item_inner"
-                                                        style="background-image:url(../file/cloudspace/4ae0d3233387d3da7bd192a04cd7a607.png);">
-                                                        <div class="index_category_list_item_content">
-                                                            <div class="index_category_list_item_desc">
-                                                                Новогодние подарки в упаковке
-                                                            </div>
-                                                            <div class="index_category_list_item_name">
-                                                                Мягкая игрушка
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="index_category_list_item_content2">
-                                                            <div class="index_category_list_item_price">
-                                                                от 1034 руб
-                                                            </div>
-                                                            <div class="index_category_list_item_count">
-                                                                14 вариантов подарков
-                                                            </div>
-                                                        </div>
-                                                        <div class="index_category_list_item_photo"></div>
-                                                    </a></div>
-                                                <div class="index_category_list_item" data-id="2"><a
-                                                        href="kartonnaya-upakovka/index.html"
-                                                        class="index_category_list_item_inner"
-                                                        style="background-image:url(../file/cloudspace/2f02d41edaa8d6f6b4b4e552033351cd.jpg);">
-                                                        <div class="index_category_list_item_content">
-                                                            <div class="index_category_list_item_desc">
-                                                                Новогодние подарки
-                                                            </div>
-                                                            <div class="index_category_list_item_name">
-                                                                В картонной упаковке
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="index_category_list_item_content2">
-                                                            <div class="index_category_list_item_price">
-                                                                от 263 руб
-                                                            </div>
-                                                            <div class="index_category_list_item_count">
-                                                                21 вариант подарков
-                                                            </div>
-                                                        </div>
-                                                        <div class="index_category_list_item_photo"><img
-                                                                src="../file/cloudspace/122250967e7bc3f02e18d556142e4922.png"
-                                                                alt=""></div>
-                                                    </a></div>
-                                                <div class="index_category_list_item" data-id="3"><a
-                                                        href="zhestyanaya-upakovka/index.html"
-                                                        class="index_category_list_item_inner"
-                                                        style="background-image:url(../file/cloudspace/b69d2f58779f109b52be27e5fb2ce55c.jpg);">
-                                                        <div class="index_category_list_item_content">
-                                                            <div class="index_category_list_item_desc">
-                                                                Новогодние подарки
-                                                            </div>
-                                                            <div class="index_category_list_item_name">
-                                                                В тубе
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="index_category_list_item_content2">
-                                                            <div class="index_category_list_item_price">
-                                                                от 387 руб
-                                                            </div>
-                                                            <div class="index_category_list_item_count">
-                                                                5 вариантов подарков
-                                                            </div>
-                                                        </div>
-                                                        <div class="index_category_list_item_photo"><img
-                                                                src="../file/cloudspace/9ec0df4798c6b1fdb656ccff1ffb3546.png"
-                                                                alt=""></div>
-                                                    </a></div>
-                                                <div class="index_category_list_item" data-id="4"><a
-                                                        href="../korporativnie-podarki/index.html"
-                                                        class="index_category_list_item_inner"
-                                                        style="background-image:url(../file/cloudspace/91c81715c15b779dc00253b6b53431af.jpg);">
-                                                        <div class="index_category_list_item_content">
-                                                            <div class="index_category_list_item_desc">
-                                                                Подарки для клиентов и партнеров
-                                                            </div>
-                                                            <div class="index_category_list_item_name">
-                                                                Корпоративные подарки
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="index_category_list_item_content2">
-                                                            <div class="index_category_list_item_price">
-                                                                от 659 руб
-                                                            </div>
-                                                            <div class="index_category_list_item_count">
-                                                                12 вариантов подарков
-                                                            </div>
-                                                        </div>
-                                                        <div class="index_category_list_item_photo"><img
-                                                                src="../file/cloudspace/f9753fd7745e9551c83007c9cd98099e.png"
-                                                                alt=""></div>
-                                                    </a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <style>
-                                        @media (max-width: 1023px) {
-                                            .cmsl_theme1_content_wrap {
-                                                background-image: none !important;
-                                            }
-                                        }
-                                    </style>
-                                </div>
                             </div>
                         </div>
                         <div class="catalog_filter_dinamic_content_loader_curtain"></div>
@@ -3132,62 +3092,27 @@
             </div>
         </div>
     </div>
-        <div class="footer_basic">
-            <div class="footer1">
-                <div class="cmsl_wrapper1 footer1_inner">
-                    <div class="footer1_head">
-                        <div class="footer1_cont">
-                            <div class="footer1_cont_box1">
-                                <div class="footer1_menu">
-                                    <ul>
-                                        <li><a href="o-kompanii/index.html">О компании</a></li>
-                                        <li><a href="podarki/index.html">Подарки</a></li>
-                                        <li><a href="kontakti/index.html">Контакты</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="footer1_cont_box2">
-                                <div class="footer1_contact1">
-                                    Отдел продаж: <a href="tel:89998887766">8 999 888 77 66</a><br>
-                                    Режим работы: пн-пт 8.30 - 17.30<br>
-                                    E-mail: <a href="mailto:sladkie-sani05@yandex.ru">sladkie-sani05@yandex.ru</a>
-                                </div>
-                            </div>
-                            <div class="footer1_cont_box3">
-                                <div class="footer1_phone">
-                                    <div class="footer1_phone_number">
-                                        <a href="tel:89998887766">8 999 888 77 66</a>
-                                    </div>
-                                </div>
-                                <div class="footer1_adress">
-                                    Татарстан г.Набережные Челны<br>
-                                    1-ая автодорога, Резервный проезд, 51/2
-                                </div>
+    <div class="footer_basic">
+        <div class="footer1">
+            <div class="cmsl_wrapper1 footer1_inner">
+                <div class="footer1_head">
+                    <div class="footer1_cont">
+                        <div class="footer1_cont_box1">
+                            <div class="footer1_menu">
+                                <ul>
+                                    <li><a href="o-kompanii/index.html">О компании</a></li>
+                                    <li><a href="podarki/index.html">Подарки</a></li>
+                                    <li><a href="kontakti/index.html">Контакты</a></li>
+                                    <li><a href="./podarki/basket/index.html">Корзина</a></li>
+                                </ul>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="footer1_foot">
-                    <div class="cmsl_wrapper1 footer1_foot_inner">
-                        <div class="footer1_foot_cont1">
-                            <div class="footer1_foot_cont1_box1">
-                                <div class="footer1_foot_cont_left">
-                                    <div class="footer1_foot_cont_left_box1">
-                                        © ООО "Сладкие Сани"
-                                    </div>
-                                    <div class="footer1_foot_cont_left_box2">
-                                        <a href="personalnie-dannie/index.html">Условия хранения персональных данных</a>
-                                    </div>
-                                </div>
-                                <div class="footer1_foot_cont_right">
-                                    <div class="logo_footer">
-                                        <img src="../file/logo.svg" alt="logo">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="footer1_foot_cont1_box2">
+                        <div class="footer1_cont_box2">
+                            <div class="footer1_contact1">
+                                Отдел продаж: <a href="tel:89998887766">8 999 888 77 66</a><br>
+                                Режим работы: пн-пт 8.30 - 17.30<br>
+                                E-mail: <a href="mailto:sladkie-sani05@yandex.ru">sladkie-sani05@yandex.ru</a>
                                 <div class="social_media">
                                     <a href="#"><img src="../file/social/tg.svg" alt="telegram"></a>
                                     <a href="#"><img src="../file/social/vk.svg" alt="vk"></a>
@@ -3195,21 +3120,49 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="footer1_cont_box3">
+                            <div class="footer1_phone">
+                                <div class="footer1_phone_number">
+                                    <a href="tel:89998887766">8 999 888 77 66</a>
+                                </div>
+                            </div>
+                            <div class="footer1_adress">
+                                Татарстан г.Набережные Челны<br>
+                                1-ая автодорога, Резервный проезд, 51/2
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="adaptivetoggle" style="display:none;">
-                    <a href="index.html#" class="adaptivetoggle_mobile">Перейти на полную версию</a>
+            <div class="footer1_foot">
+                <div class="cmsl_wrapper1 footer1_foot_inner">
+                    <div class="footer1_foot_cont1">
+                        <div class="footer1_foot_cont1_box1">
+                            <div class="footer1_foot_cont_left">
+                                <div class="footer1_foot_cont_left_box1">
+                                    © ООО "Сладкие Сани"
+                                </div>
+                                <div class="footer1_foot_cont_left_box2">
+                                    <a href="personalnie-dannie/index.html">Условия хранения персональных данных</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer1_foot_cont1_box2">
+                            <div class="logo_footer">
+                                <img src="../file/logo.svg" alt="logo">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-    <a href="index.html#" class="commeronline_action commer_offer_but_fixed"
-        data-commeronline-zagol1="Запросить коммерческое предложение" data-commeronline-zagol2="">
-        <div class="commer_offer_but_fixed_tx">
-            Запросить<br> коммерческое<br> предложение
+            <div class="adaptivetoggle" style="display:none;">
+                <a href="index.html#" class="adaptivetoggle_mobile">Перейти на полную версию</a>
+            </div>
         </div>
-    </a>
+    </div>
+
     </div><template id="menu_popup_contact_inpast" style="display:none;">
         <div class="menu_popup_contact">
             xxxx
@@ -3217,48 +3170,53 @@
     </template>
 
     <script>
-        filterSelection("all")
-        function filterSelection(c) {
-            var x, i;
-            x = document.getElementsByClassName("filterDiv");
-            if (c == "all") c = "";
-            for (i = 0; i < x.length; i++) {
-                w3RemoveClass(x[i], "show");
-                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-            }
+        function toggleFilter() {
+            var filterSidebar = document.getElementById('filterSidebar');
+            filterSidebar.classList.toggle('active');
         }
 
-        function w3AddClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
-            }
-        }
+        function applyFilters() {
+            var category = document.getElementById('category').value;
+            var weightFrom = document.getElementById('weightFrom').value;
+            var weightTo = document.getElementById('weightTo').value;
+            var priceFrom = document.getElementById('priceFrom').value;
+            var priceTo = document.getElementById('priceTo').value;
 
-        function w3RemoveClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                while (arr1.indexOf(arr2[i]) > -1) {
-                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+            // Применяем фильтры
+            var items = document.querySelectorAll('.catalog__cat_tovar_list1_item');
+            items.forEach(function (item) {
+                var itemCategory = item.classList.contains(category) || category === '';
+                var itemWeight = (weightFrom === '' || parseFloat(item.querySelector('.catalog__tovar_list1_item_grade_weight').innerText) >= parseFloat(weightFrom))
+                    && (weightTo === '' || parseFloat(item.querySelector('.catalog__tovar_list1_item_grade_weight').innerText) <= parseFloat(weightTo));
+                var itemPrice = (priceFrom === '' || parseFloat(item.querySelector('.catalog_tovar_list1_price').innerText) >= parseFloat(priceFrom))
+                    && (priceTo === '' || parseFloat(item.querySelector('.catalog_tovar_list1_price').innerText) <= parseFloat(priceTo));
+
+                if (itemCategory && itemWeight && itemPrice) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
                 }
-            }
-            element.className = arr1.join(" ");
-        }
-
-        // Добавьте активный класс к текущей кнопке (выделите его)
-        var btnContainer = document.getElementById("myBtnContainer");
-        var btns = btnContainer.getElementsByClassName("btn");
-        for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function () {
-                var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
             });
         }
+
+        function clearFilters() {
+            document.getElementById('category').value = '';
+            document.getElementById('weightFrom').value = '';
+            document.getElementById('weightTo').value = '';
+            document.getElementById('priceFrom').value = '';
+            document.getElementById('priceTo').value = '';
+
+            applyFilters(); // Применяем фильтры после очистки
+        }
+
+        // Закрытие меню при нажатии вне меню
+        document.addEventListener('click', function (event) {
+            var filterSidebar = document.getElementById('filterSidebar');
+            var filterButton = document.querySelector('.filter-button');
+            if (!filterSidebar.contains(event.target) && event.target !== filterButton) {
+                filterSidebar.classList.remove('active');
+            }
+        });
     </script>
 </body>
 

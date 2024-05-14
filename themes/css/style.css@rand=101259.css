@@ -1080,16 +1080,30 @@ body[data-page="default"] .footer_basic {
   border-radius: 20px;
 }
 
-.logo_footer img{
-  margin-top: 30px;
-  width: 250px;
+.logo_footer img {
+  width: 200px;
+  margin-top: -15px;
 }
 
-.social_media{
+.social_media {
   display: flex;
   gap: 15px;
+  max-width: 255px;
+  margin: 0 auto;
+  justify-content: start;
+  margin-top: 10px;
+  /* gap: 30px; */
 }
 
-.social_media a img{
-  width: 40px;
+.social_media a img {
+  width: 35px;
+}
+
+.fizlico{
+  text-align: center;
+}
+
+.fizlico h2{
+  margin: 0;
+  margin-bottom: 26px;
 }

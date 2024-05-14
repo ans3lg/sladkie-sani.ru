@@ -371,7 +371,7 @@
 .catalog_filter_dinamic_content{
     position:relative;
     z-index:1;
-    margin-top:25px;
+    /* margin-top:25px; */
 }
 .catalog_filter_dinamic_content_loader_curtain{
     position:absolute;

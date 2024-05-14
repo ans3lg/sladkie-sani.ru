@@ -669,9 +669,15 @@
 	.index_tovar_hit_content{
 		margin-top:10px;
 	}
+    body[data-page="default"] .footer_basic {
+        margin-top: 70px;
+      }
 }
 
 @media (max-width: 480px){
+    body[data-page="default"] .footer_basic {
+        margin-top: 30px;
+      }
     .index_head_title h1{
         font-size:48px;
     }

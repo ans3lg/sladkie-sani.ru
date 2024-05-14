@@ -1,0 +1,12 @@
+@media (max-width: 425px){
+    .buttons_oformlenie {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        gap: 0;
+      }
+      
+      .buttons_oformlenie a {
+        font-size: 14px;
+      }
+}
