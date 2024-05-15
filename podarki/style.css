@@ -41,23 +41,23 @@
 }
 
 /* Стили для кнопок фильтра */
-.file-for-button{
+.file-for-button {
   display: none;
 }
 
-.filter-button{
+.filter-button {
   margin: 0;
   padding: 0;
 }
 
 .filter-sidebar {
   display: flex;
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: 150px;
   right: 0;
   width: 250px;
   height: 100%;
-  z-index: 1000;
+  z-index: 101;
   /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
   padding: 20px;
 }
@@ -78,48 +78,54 @@
   display: block; /* По умолчанию все товары видимы */
 }
 
-.form_label{
+.form_label {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
 }
 
-.filter_filter_button{
+.filter_filter_button {
   width: 47%;
   height: 30px;
   background: #ffffff;
   border: 1px solid #333;
   cursor: pointer;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.filter_filter_button:hover{
+.filter_filter_button:hover {
   background: #ededed;
 }
 
-.category{
+.category {
   margin-top: 30px;
   /* margin-bottom: -20px; */
 }
 
-.category_select{
+.category_select {
   width: 100%;
 }
 
-.cmsl_theme_breadrazd_wrap_podarki{
-  display:flex;
-  flex-wrap:wrap;
-  flex-direction:column;
-  padding-top:25px;
-  position:relative;
+.cmsl_theme_breadrazd_wrap_podarki {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-top: 25px;
+  position: relative;
 }
 
-.close-button{
+.close-button {
   display: none;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1783px) {
+  .form_label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
   .close-button {
     display: block;
     position: absolute;
@@ -129,7 +135,7 @@
     fill: #0000009e;
     width: 40px;
   }
-  .file-for-button{
+  .file-for-button {
     display: flex;
     justify-content: end;
   }

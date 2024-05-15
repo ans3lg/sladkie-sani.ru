@@ -10,3 +10,56 @@
         font-size: 14px;
       }
 }
+@media (max-width: 1023px) {
+  .oformlenie_zakaza {
+    display: block;
+  }
+  .left_oformlenie{
+    margin: 0 auto;
+    width: 80%;
+  }
+  .right_oformlenie{
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .cash{
+    text-align: left;
+    font-size: 16px;
+  }
+  .oformit_zakaz button{
+    font-size: 16px;
+  }
+  .date_dostavka, .adress_dostavka{
+    display: block;
+  }
+  .date_dostavka_input, .adress_dostavka_input{
+    margin: 0;
+  }
+  .date_dostavka_input input, .adress_dostavka_input input{
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .itog{
+    display: block;
+    text-align: center;
+  }
+  .cash{
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .cash{
+    font-size: 14px;
+  }
+  .oformit_zakaz button{
+    font-size: 14px;
+  }
+  .itog_p{
+    font-size: 18px;
+  }
+}

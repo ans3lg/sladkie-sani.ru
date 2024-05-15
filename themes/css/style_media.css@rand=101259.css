@@ -506,6 +506,19 @@
 }
 
 @media (max-width: 767px){
+    .social_media {
+        display: flex;
+        gap: 15px;
+        max-width: 255px;
+        margin: 0 auto;
+        justify-content: center;
+        margin-top: 10px;
+        /* gap: 30px; */
+      }
+      
+      .social_media a img {
+        width: 35px;
+      }
     .index_head_title h1{
         font-size:65px;
         letter-spacing:-2px;

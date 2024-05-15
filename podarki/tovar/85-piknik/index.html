@@ -86,285 +86,253 @@
             <div id="close"></div>
 
             <div class="commeronline_ng_body_inner">
-                <div class="commeronline_form_header">
-                    <div class="commeronline_zagol1">
-                        <span class="commeronline_zagol1_span1">Запрос</span> на коммерческое предложение                    </div>
-                </div>
+                
 
                 <div class="commeronline_form_wrap">
                     <div class="commeronline_form_wrap2">
-                        <form action="https://formspree.io/f/mgegqzpp" method="POST" class="commeronline_form">
-                            <input type="hidden" name="zagol1" value="Запрос на коммерческое предложение" autocomplete="off">
-                            <input type="hidden" name="zagol2" value="" autocomplete="off">
+                    <form action="https://formspree.io/f/mgegqzpp" method="POST" class="commeronline_form" id="commeronline_form" novalidate>
+        <div class="commeronline_form_header">
+            <div class="commeronline_zagol1">
+                <span class="commeronline_zagol1_span1">Запрос</span> на коммерческое предложение
+            </div>
+        </div>
+        <input type="hidden" name="zagol1" value="Запрос на коммерческое предложение" autocomplete="off">
+        <input type="hidden" name="zagol2" value="" autocomplete="off">
 
-                            <div class="commeronline_form_content">
-                                <div class="commeronline_ng_cont1">
-                                    <div class="commeronline_ng_cont1_box1">
-                                        <div class="commeronline_ng_cont1_box1_formblock commeronline_label" data-label_key="name">
-                                            <input type="text" name="name" id="name" placeholder="Как вас зовут?" class="commeronline_input1" autocomplete="off">
-                                        </div>
-                                        <div class="commeronline_ng_cont1_box1_formblock commeronline_label">
-                                            <input type="text" name="city" id="city" placeholder="Введите город" class="commeronline_input1" autocomplete="off">
-                                        </div>
-                                        <div class="commeronline_ng_cont1_box1_formblock commeronline_label" data-label_key="tel">
-                                            <input type="tel" name="tel" id="tel" placeholder="Введите телефон" class="commeronline_input1" autocomplete="off">
-                                        </div>
-                                        <div class="commeronline_ng_cont1_box1_formblock commeronline_label">
-                                            <input type="email" name="email" id="email" placeholder="Введите e-mail" class="commeronline_input1" autocomplete="off">
-                                        </div>
-                                        
-                                        
-                                        <script>
-                                            function validateForm() {
-                                                var name = document.getElementById('name').value;
-                                                var city = document.getElementById('city').value;
-                                                var tel = document.getElementById('tel').value;
-                                                var email = document.getElementById('email').value;
-                                        
-                                                // Проверка на пустые поля
-                                                if (name === "" || city === "" || tel === "" || email === "") {
-                                                    alert("Пожалуйста, заполните все поля");
-                                                    return false;
-                                                }
-                                        
-                                                // Проверка корректности email
-                                                var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                                                if (!email.match(emailRegex)) {
-                                                    alert("Пожалуйста, введите корректный email адрес");
-                                                    return false;
-                                                }
-                                        
-                                                // Проверка корректности телефона (простая проверка на количество символов)
-                                                if (tel.length < 6) {
-                                                    alert("Пожалуйста, введите корректный номер телефона");
-                                                    return false;
-                                                }
-                                        
-                                                // Все проверки пройдены
-                                                alert("Форма успешно заполнена!");
-                                        
-                                                // Сброс значений полей ввода
-                                                document.getElementById('name').value = "";
-                                                document.getElementById('city').value = "";
-                                                document.getElementById('tel').value = "";
-                                                document.getElementById('email').value = "";
-                                        
-                                                // Закрытие модального окна
-                                                var modal = document.getElementById('myModal_podbor');
-                                                modal.style.display = "none";
-                                        
-                                                return true;
-                                            }
-                                        </script>
-                                        
-
-
-                                        <script>
-                                            $('.commeronline_selbox1 select').on('change',function(){
-                                                if ($(this).val()){
-                                                    return $(this).css('color','#000');
-                                                }else{
-                                                    return $(this).css('color', '#737373');
-                                                }
-                                            });
-
-                                            $('.commeronline_selbox1 select').change();
-                                        </script>
-                                    </div>
-                                    <div class="commeronline_ng_cont1_box2">
-                                        <div class="commeronline_ng_discuss">
-                                            <div class="commeronline_ng_discuss_title">
-                                                Обсудим подарок?
-                                            </div>
-                                            <div class="commeronline_ng_discuss_list">
-                                                <div class="commeronline_ng_discuss_list_item">
-                                                    <div class="commeronline_ng_discuss_styling_checkbox">
-                                                        <label>
-                                                            <input type="checkbox" name="discuss[]" value="Картонная упаковка" autocomplete="off">
-                                                            <div class="commeronline_ng_discuss_styling_checkbox_cont_virt">
-                                                                <div class="commeronline_ng_discuss_styling_checkbox_pip">
-                                                                    <span class="commeronline_ng_discuss_styling_checkbox_pip_v"></span>
-                                                                </div>
-                                                                <div class="commeronline_ng_discuss_styling_checkbox_tx">
-                                                                    Картонная упаковка
-                                                                </div>
-                                                            </div>
-                                                        </label>
-                                                    </div>
-                                                </div>
-
-                                                <div class="commeronline_ng_discuss_list_item">
-                                                    <div class="commeronline_ng_discuss_styling_checkbox">
-                                                        <label>
-                                                            <input type="checkbox" name="discuss[]" value="Жестяная упаковка" autocomplete="off">
-                                                            <div class="commeronline_ng_discuss_styling_checkbox_cont_virt">
-                                                                <div class="commeronline_ng_discuss_styling_checkbox_pip">
-                                                                    <span class="commeronline_ng_discuss_styling_checkbox_pip_v"></span>
-                                                                </div>
-                                                                <div class="commeronline_ng_discuss_styling_checkbox_tx">
-                                                                    Жестяная упаковка
-                                                                </div>
-                                                            </div>
-                                                        </label>
-                                                    </div>
-                                                </div>
-
-                                                <div class="commeronline_ng_discuss_list_item">
-                                                    <div class="commeronline_ng_discuss_styling_checkbox">
-                                                        <label>
-                                                            <input type="checkbox" name="discuss[]" value="Мягкая игрушка" autocomplete="off">
-                                                            <div class="commeronline_ng_discuss_styling_checkbox_cont_virt">
-                                                                <div class="commeronline_ng_discuss_styling_checkbox_pip">
-                                                                    <span class="commeronline_ng_discuss_styling_checkbox_pip_v"></span>
-                                                                </div>
-                                                                <div class="commeronline_ng_discuss_styling_checkbox_tx">
-                                                                    Мягкая игрушка
-                                                                </div>
-                                                            </div>
-                                                        </label>
-                                                    </div>
-                                                </div>
-
-                                                <div class="commeronline_ng_discuss_list_item">
-                                                    <div class="commeronline_ng_discuss_styling_checkbox">
-                                                        <label>
-                                                            <input type="checkbox" name="discuss[]" value="Подберите мне индивидуальную упаковку :)" autocomplete="off">
-                                                            <div class="commeronline_ng_discuss_styling_checkbox_cont_virt">
-                                                                <div class="commeronline_ng_discuss_styling_checkbox_pip">
-                                                                    <span class="commeronline_ng_discuss_styling_checkbox_pip_v"></span>
-                                                                </div>
-                                                                <div class="commeronline_ng_discuss_styling_checkbox_tx">
-                                                                    <b>Подберите мне индивидуальную упаковку :)</b>
-                                                                </div>
-                                                            </div>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="commeronline_ng_budget">
-                                            <div class="commeronline_ng_formcont1">
-                                                <div class="commeronline_ng_formcont1_box1">
-                                                    <div class="commeronline_ng_formcont1_name">
-                                                        Бюджет для подарка
-                                                    </div>
-                                                </div>
-                                                <div class="commeronline_ng_formcont1_box2">
-                                                    <input type="text" name="budget" placeholder="" class="commeronline_input1" autocomplete="off">
-                                                    <span class="commeronline_ng_formcont1_unit">
-                                                        рублей
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="commeronline_ng_weight">
-                                            <div class="commeronline_ng_formcont1">
-                                                <div class="commeronline_ng_formcont1_box1">
-                                                    <div class="commeronline_ng_formcont2 commeronline_formcond_weight">
-                                                        <div class="commeronline_ng_formcont2_box1">
-                                                            <div class="commeronline_ng_formcont1_name">
-                                                                Вес подарка
-                                                            </div>
-                                                        </div>
-                                                        <div class="commeronline_ng_formcont2_box2">
-                                                            <input type="text" name="weight" placeholder="" class="commeronline_input1" autocomplete="off">
-                                                            <span class="commeronline_ng_formcont1_unit">
-                                                                гр.
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="commeronline_ng_formcont1_box2">
-                                                    <div class="commeronline_ng_formcont2 commeronline_formcond_kolvo">
-                                                        <div class="commeronline_ng_formcont2_box1">
-                                                            <div class="commeronline_ng_formcont1_name">
-                                                                Количество
-                                                            </div>
-                                                        </div>
-                                                        <div class="commeronline_ng_formcont2_box2">
-                                                            <input type="text" name="kolvo" placeholder="" class="commeronline_input1" autocomplete="off">
-                                                            <span class="commeronline_ng_formcont1_unit">
-                                                                шт
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="commeronline_ng_primech">
-                                    <textarea name="primech" placeholder="Текст сообщения" class="commeronline_textarea1"></textarea>
-                                </div>
-
-                                <div class="commeronline_ng_cont_foot">
-                                    <div class="commeronline_ng_cont_foot_box1">
-                                        <div class="commeronline_button_wrap">
-                                            <button type="submit" class="commeronline_button" onclick="validateForm()">
-                                                <span class="commeronline_button_tx">Отправить запрос</span>
-                                                <div class="commeronline_button_loader"></div>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="commeronline_ng_cont_foot_box2">
-                                        <div class="commeronline_rules">
-                                            Нажимая на кнопку "Отправить" вы соглашаетесь с<br>
-                                            <a href="/personalnie-dannie/" target="_blank">условиями хранения персональных данных</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="commeronline_error"></div>
-                            </div>
-                        </form>
+        <div class="commeronline_form_content">
+            <div class="commeronline_ng_cont1">
+                <div class="commeronline_ng_cont1_box1">
+                    <div class="commeronline_ng_cont1_box1_formblock commeronline_label" data-label_key="name">
+                        <input type="text" name="name" id="name" placeholder="Как вас зовут?" class="commeronline_input1" autocomplete="off" required>
                     </div>
-                    <div class="commeronline_result" style="display: none;">
+                    <div class="commeronline_ng_cont1_box1_formblock commeronline_label">
+                        <input type="text" name="city" id="city" placeholder="Введите город" class="commeronline_input1" autocomplete="off" required>
+                    </div>
+                    <div class="commeronline_ng_cont1_box1_formblock commeronline_label" data-label_key="tel">
+                        <input type="tel" name="tel" id="tel" placeholder="Введите телефон" class="commeronline_input1" autocomplete="off" required>
+                    </div>
+                    <div class="commeronline_ng_cont1_box1_formblock commeronline_label">
+                        <input type="email" name="email" id="email" placeholder="Введите e-mail" class="commeronline_input1" autocomplete="off" required>
+                    </div>
+                </div>
+                <div class="commeronline_ng_cont1_box2">
+                    <div class="commeronline_ng_discuss">
+                        <div class="commeronline_ng_discuss_title">
+                            Обсудим подарок?
+                        </div>
+                        <div class="commeronline_ng_discuss_list">
+                            <div class="commeronline_ng_discuss_list_item">
+                                <div class="commeronline_ng_discuss_styling_checkbox">
+                                    <label>
+                                        <input type="checkbox" name="discuss[]"
+                                            value="Картонная упаковка" autocomplete="off">
+                                        <div
+                                            class="commeronline_ng_discuss_styling_checkbox_cont_virt">
+                                            <div
+                                                class="commeronline_ng_discuss_styling_checkbox_pip">
+                                                <span
+                                                    class="commeronline_ng_discuss_styling_checkbox_pip_v"></span>
+                                            </div>
+                                            <div
+                                                class="commeronline_ng_discuss_styling_checkbox_tx">
+                                                Картонная упаковка
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="commeronline_ng_discuss_list_item">
+                                <div class="commeronline_ng_discuss_styling_checkbox">
+                                    <label>
+                                        <input type="checkbox" name="discuss[]"
+                                            value="Жестяная упаковка" autocomplete="off">
+                                        <div
+                                            class="commeronline_ng_discuss_styling_checkbox_cont_virt">
+                                            <div
+                                                class="commeronline_ng_discuss_styling_checkbox_pip">
+                                                <span
+                                                    class="commeronline_ng_discuss_styling_checkbox_pip_v"></span>
+                                            </div>
+                                            <div
+                                                class="commeronline_ng_discuss_styling_checkbox_tx">
+                                                Жестяная упаковка
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="commeronline_ng_discuss_list_item">
+                                <div class="commeronline_ng_discuss_styling_checkbox">
+                                    <label>
+                                        <input type="checkbox" name="discuss[]"
+                                            value="Мягкая игрушка" autocomplete="off">
+                                        <div
+                                            class="commeronline_ng_discuss_styling_checkbox_cont_virt">
+                                            <div
+                                                class="commeronline_ng_discuss_styling_checkbox_pip">
+                                                <span
+                                                    class="commeronline_ng_discuss_styling_checkbox_pip_v"></span>
+                                            </div>
+                                            <div
+                                                class="commeronline_ng_discuss_styling_checkbox_tx">
+                                                Мягкая игрушка
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="commeronline_ng_discuss_list_item">
+                                <div class="commeronline_ng_discuss_styling_checkbox">
+                                    <label>
+                                        <input type="checkbox" name="discuss[]"
+                                            value="Подберите мне индивидуальную упаковку :)"
+                                            autocomplete="off">
+                                        <div
+                                            class="commeronline_ng_discuss_styling_checkbox_cont_virt">
+                                            <div
+                                                class="commeronline_ng_discuss_styling_checkbox_pip">
+                                                <span
+                                                    class="commeronline_ng_discuss_styling_checkbox_pip_v"></span>
+                                            </div>
+                                            <div
+                                                class="commeronline_ng_discuss_styling_checkbox_tx">
+                                                <b>Подберите мне индивидуальную упаковку :)</b>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="commeronline_ng_budget">
+                        <div class="commeronline_ng_formcont1">
+                            <div class="commeronline_ng_formcont1_box1">
+                                <div class="commeronline_ng_formcont1_name">
+                                    Бюджет для подарка
+                                </div>
+                            </div>
+                            <div class="commeronline_ng_formcont1_box2">
+                                <input type="text" name="budget" placeholder=""
+                                    class="commeronline_input1" autocomplete="off">
+                                <span class="commeronline_ng_formcont1_unit">
+                                    рублей
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="commeronline_ng_weight">
+                        <div class="commeronline_ng_formcont1">
+                            <div class="commeronline_ng_formcont1_box1">
+                                <div class="commeronline_ng_formcont2 commeronline_formcond_weight">
+                                    <div class="commeronline_ng_formcont2_box1">
+                                        <div class="commeronline_ng_formcont1_name">
+                                            Вес подарка
+                                        </div>
+                                    </div>
+                                    <div class="commeronline_ng_formcont2_box2">
+                                        <input type="text" name="weight" placeholder=""
+                                            class="commeronline_input1" autocomplete="off">
+                                        <span class="commeronline_ng_formcont1_unit">
+                                            гр.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="commeronline_ng_formcont1_box2">
+                                <div class="commeronline_ng_formcont2 commeronline_formcond_kolvo">
+                                    <div class="commeronline_ng_formcont2_box1">
+                                        <div class="commeronline_ng_formcont1_name">
+                                            Количество
+                                        </div>
+                                    </div>
+                                    <div class="commeronline_ng_formcont2_box2">
+                                        <input type="text" name="kolvo" placeholder=""
+                                            class="commeronline_input1" autocomplete="off">
+                                        <span class="commeronline_ng_formcont1_unit">
+                                            шт
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="commeronline_ng_primech">
+                <textarea name="primech" placeholder="Текст сообщения" class="commeronline_textarea1"></textarea>
+            </div>
+
+            <div class="commeronline_ng_cont_foot">
+                <div class="commeronline_ng_cont_foot_box1">
+                    <div class="commeronline_button_wrap">
+                        <button type="submit" class="commeronline_button">
+                            <span class="commeronline_button_tx">Отправить запрос</span>
+                            <div class="commeronline_button_loader"></div>
+                        </button>
+                    </div>
+                </div>
+                <div class="commeronline_ng_cont_foot_box2">
+                    <div class="commeronline_rules">
+                        Нажимая на кнопку "Отправить" вы соглашаетесь с<br>
+                        <a href="/personalnie-dannie/" target="_blank">условиями хранения персональных данных</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="commeronline_error"></div>
+        </div>
+    </form>
+                        
+                    </div>
+                    <div class="commeronline_result">
                         Заявка успешно отправлена!
                         <div>
                             <b>Спасибо!</b>
                         </div>
+                        <a href="index.html">Вернуться на главную!</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
     <style>
-        .modal {
+        .error {
+            border-color: red;
+        }
+        .commeronline_button_loader {
             display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
-
         }
-        .modal-content-podbor {
-            width: 1288px;
-            min-height: 923px;
-            background-repeat: no-repeat;
-            background: url(../../../plugin/commeronline/custom_img/commeronline_ng_bg.png);
-            margin: 50px auto;
-            position: relative;
-        }
-        #modal_podbor {
-            cursor: pointer;
-        }
-        #close {
-            cursor: pointer;
-            position: absolute;
-            background: url(../../../plugin/commeronline/custom_img/commeronline_ng_close.svg);
-            width: 25px;
-            height: 25px;
-            top: 100px;
-            right: 100px;
+        .commeronline_result {
+            display: none;
         }
     </style>
+    <script>
+        document.getElementById('commeronline_form').addEventListener('submit', function(event) {
+            var form = event.target;
+            var formData = new FormData(form);
+            var requiredFields = ['name', 'city', 'tel', 'email'];
+            var errorMessage = '';
+
+            requiredFields.forEach(function(field) {
+                if (!formData.get(field)) {
+                    errorMessage += 'Поле ' + field + ' обязательно для заполнения.\n';
+                }
+            });
+
+            if (errorMessage) {
+                event.preventDefault();
+                alert(errorMessage);
+            }
+        });
+    </script>
+    
+    
 
 
     <div class="cmsl_wrapper0 cmsl_outer">

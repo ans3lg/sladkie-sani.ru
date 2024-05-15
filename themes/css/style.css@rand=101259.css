@@ -58,7 +58,8 @@
   transition: all 0.1s ease-out 0s;
 }
 .header1_favorite {
-  display: inline-flex;
+  /* display: inline-flex; */
+  display: none;
   vertical-align: top;
   position: absolute;
   top: 18px;
@@ -275,7 +276,7 @@ body[data-page="default"] .header2 {
   position: fixed;
   top: 8px;
   left: 8px;
-  z-index: 1200;
+  z-index: 1000;
   background: #fff;
   overflow: hidden;
   cursor: pointer;

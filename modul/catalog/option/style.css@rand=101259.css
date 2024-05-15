@@ -2918,6 +2918,11 @@
 .catalog__tovar_view_action_inbox_cont_box1 td {
     padding-left: 50px;
 }
+@media screen and (max-width: 1024px) {
+    .catalog__tovar_view_action_inbox_cont_box1 td {
+        padding-left: 10px;
+    }
+}
 .catalog__tovar_view_action_inbox_cont_box2{
     flex:1;
     background:#f4f4f4;
@@ -3208,7 +3213,7 @@
 /* слайдер */
 
 .swiper-container {
-    width: 100%;
+    max-width: 1280px;
     height: 100%;
 }
 
@@ -3217,14 +3222,67 @@
     font-size: 18px;
     background: #fff;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.swiper-slide:hover {
+    transform: translateY(-5px);
+}
+
+.swiper-slide img {
+    width: 149px;
+    height: 195px;
+    max-height: 200px;
+    margin: 0 auto;
+}
+.swiper-slide {
+    width: 411px;
+    height: 100%;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 1200px) {
+    .swiper-slide {
+        /* дополнительные стили для адаптивности, если нужны */
+    }
+    .swiper-slide img {
+        display: block;
+        width: 129px;
+        height: 175px;
+        max-height: 200px;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 1400px) {
+    .swiper-slide {
+        /* дополнительные стили для адаптивности, если нужны */
+    }
+    .swiper-slide img {
+        display: block;
+        width: 109px;
+        height: 155px;
+        max-height: 200px;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin: 0 auto;
+
     justify-content: center;
     align-items: center;
+}
 }
 
 .swiper-slide img {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 141px;
+    height: 195px;
     object-fit: cover;
 }
 
@@ -3236,7 +3294,13 @@
 }
 
 @media (max-width: 600px) {
-    .swiper-container[slides-per-view="3"] {
-        --swiper-slides-per-view: 1;
+
+    .swiper-slide {
+        /* дополнительные стили для адаптивности, если нужны */
     }
+}
+
+
+.catalog_favorite_label  {
+    display: none;
 }

@@ -85,15 +85,17 @@
             <div id="close"></div>
 
             <div class="commeronline_ng_body_inner">
-                <div class="commeronline_form_header">
-                    <div class="commeronline_zagol1">
-                        <span class="commeronline_zagol1_span1">Запрос</span> на коммерческое предложение
-                    </div>
-                </div>
+
 
                 <div class="commeronline_form_wrap">
                     <div class="commeronline_form_wrap2">
-                        <form action="https://formspree.io/f/mgegqzpp" method="POST" class="commeronline_form">
+                        <form action="https://formspree.io/f/mgegqzpp" method="POST" class="commeronline_form"
+                            id="commeronline_form" novalidate>
+                            <div class="commeronline_form_header">
+                                <div class="commeronline_zagol1">
+                                    <span class="commeronline_zagol1_span1">Запрос</span> на коммерческое предложение
+                                </div>
+                            </div>
                             <input type="hidden" name="zagol1" value="Запрос на коммерческое предложение"
                                 autocomplete="off">
                             <input type="hidden" name="zagol2" value="" autocomplete="off">
@@ -104,79 +106,21 @@
                                         <div class="commeronline_ng_cont1_box1_formblock commeronline_label"
                                             data-label_key="name">
                                             <input type="text" name="name" id="name" placeholder="Как вас зовут?"
-                                                class="commeronline_input1" autocomplete="off">
+                                                class="commeronline_input1" autocomplete="off" required>
                                         </div>
                                         <div class="commeronline_ng_cont1_box1_formblock commeronline_label">
                                             <input type="text" name="city" id="city" placeholder="Введите город"
-                                                class="commeronline_input1" autocomplete="off">
+                                                class="commeronline_input1" autocomplete="off" required>
                                         </div>
                                         <div class="commeronline_ng_cont1_box1_formblock commeronline_label"
                                             data-label_key="tel">
                                             <input type="tel" name="tel" id="tel" placeholder="Введите телефон"
-                                                class="commeronline_input1" autocomplete="off">
+                                                class="commeronline_input1" autocomplete="off" required>
                                         </div>
                                         <div class="commeronline_ng_cont1_box1_formblock commeronline_label">
                                             <input type="email" name="email" id="email" placeholder="Введите e-mail"
-                                                class="commeronline_input1" autocomplete="off">
+                                                class="commeronline_input1" autocomplete="off" required>
                                         </div>
-
-
-                                        <script>
-                                            function validateForm() {
-                                                var name = document.getElementById('name').value;
-                                                var city = document.getElementById('city').value;
-                                                var tel = document.getElementById('tel').value;
-                                                var email = document.getElementById('email').value;
-
-                                                // Проверка на пустые поля
-                                                if (name === "" || city === "" || tel === "" || email === "") {
-                                                    alert("Пожалуйста, заполните все поля");
-                                                    return false;
-                                                }
-
-                                                // Проверка корректности email
-                                                var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                                                if (!email.match(emailRegex)) {
-                                                    alert("Пожалуйста, введите корректный email адрес");
-                                                    return false;
-                                                }
-
-                                                // Проверка корректности телефона (простая проверка на количество символов)
-                                                if (tel.length < 6) {
-                                                    alert("Пожалуйста, введите корректный номер телефона");
-                                                    return false;
-                                                }
-
-                                                // Все проверки пройдены
-                                                alert("Форма успешно заполнена!");
-
-                                                // Сброс значений полей ввода
-                                                document.getElementById('name').value = "";
-                                                document.getElementById('city').value = "";
-                                                document.getElementById('tel').value = "";
-                                                document.getElementById('email').value = "";
-
-                                                // Закрытие модального окна
-                                                var modal = document.getElementById('myModal_podbor');
-                                                modal.style.display = "none";
-
-                                                return true;
-                                            }
-                                        </script>
-
-
-
-                                        <script>
-                                            $('.commeronline_selbox1 select').on('change', function () {
-                                                if ($(this).val()) {
-                                                    return $(this).css('color', '#000');
-                                                } else {
-                                                    return $(this).css('color', '#737373');
-                                                }
-                                            });
-
-                                            $('.commeronline_selbox1 select').change();
-                                        </script>
                                     </div>
                                     <div class="commeronline_ng_cont1_box2">
                                         <div class="commeronline_ng_discuss">
@@ -262,7 +206,7 @@
                                                                 </div>
                                                                 <div
                                                                     class="commeronline_ng_discuss_styling_checkbox_tx">
-                                                                    <b>Подберите мне индивидуальную упаковку :</b>
+                                                                    <b>Подберите мне индивидуальную упаковку :)</b>
                                                                 </div>
                                                             </div>
                                                         </label>
@@ -335,7 +279,7 @@
                                 <div class="commeronline_ng_cont_foot">
                                     <div class="commeronline_ng_cont_foot_box1">
                                         <div class="commeronline_button_wrap">
-                                            <button type="submit" class="commeronline_button" onclick="validateForm()">
+                                            <button type="submit" class="commeronline_button">
                                                 <span class="commeronline_button_tx">Отправить запрос</span>
                                                 <div class="commeronline_button_loader"></div>
                                             </button>
@@ -353,54 +297,51 @@
                                 <div class="commeronline_error"></div>
                             </div>
                         </form>
+
                     </div>
-                    <div class="commeronline_result" style="display: none;">
+                    <div class="commeronline_result">
                         Заявка успешно отправлена!
                         <div>
                             <b>Спасибо!</b>
                         </div>
+                        <a href="index.html">Вернуться на главную!</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <style>
-        .modal {
+        .error {
+            border-color: red;
+        }
+
+        .commeronline_button_loader {
             display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
-
         }
 
-        .modal-content-podbor {
-            width: 1288px;
-            min-height: 923px;
-            background-repeat: no-repeat;
-            background: url(../../plugin/commeronline/custom_img/commeronline_ng_bg.png);
-            margin: 50px auto;
-            position: relative;
-        }
-
-        #modal_podbor {
-            cursor: pointer;
-        }
-
-        #close {
-            cursor: pointer;
-            position: absolute;
-            background: url(../../plugin/commeronline/custom_img/commeronline_ng_close.svg);
-            width: 25px;
-            height: 25px;
-            top: 100px;
-            right: 100px;
+        .commeronline_result {
+            display: none;
         }
     </style>
+    <script>
+        document.getElementById('commeronline_form').addEventListener('submit', function (event) {
+            var form = event.target;
+            var formData = new FormData(form);
+            var requiredFields = ['name', 'city', 'tel', 'email'];
+            var errorMessage = '';
+
+            requiredFields.forEach(function (field) {
+                if (!formData.get(field)) {
+                    errorMessage += 'Поле ' + field + ' обязательно для заполнения.\n';
+                }
+            });
+
+            if (errorMessage) {
+                event.preventDefault();
+                alert(errorMessage);
+            }
+        });
+    </script>
 
     <div class="cmsl_wrapper0 cmsl_outer">
         <div class="adapt-cloud"></div>
@@ -503,421 +444,6 @@
                         &nbsp; Оформление заказа на физическле лицо</div>
                 </div>
             </div>
-            <!-- <div class="cmsl_theme1_content_wrap">
-                <div class="cmsl_wrapper1 cmsl_wrapper_padding_self cmsl_theme1_content">
-                    <div class="cmsl_content cmsl_osntext">
-                        <div class="catalog__basket_action">
-                            <div class="catalog__basket_action_product_pane">
-                                
-                                <div class="catalog__basket_action_oform_fiz">
-                                    <div class="catalog__basket_action_oform_inner">
-                                        <form method="POST" enctype="multipart/form-data"
-                                            class="catalog__basket_action_oform_form" id="order_form"
-                                            onsubmit="return validateForm()">
-
-
-                                            <div class="catalog__basket_action_oform_body_fiz">
-                                                <div class="catalog__basket_action_oform_cont_basic">
-                                                    <div class="catalog__basket_action_oform_cont_basic_box1">
-                                                        <div class="catalog__basket_action_oform_cont_basic_box1_inner">
-                                                            <div class="catalog__basket_action_oform_info">
-                                                                <div class="catalog__basket_action_oform_info_title">
-                                                                    Введите свои данные
-                                                                </div>
-                                                                <div class="catalog__basket_action_oform_info_content">
-                                                                    <div class="catalog__basket_action_oform_info_formblock catalog__basket_action_oform_labelform"
-                                                                        data-label_key="name">
-                                                                        <input type="text" name="name" required
-                                                                            placeholder="ФИО контактного лица"
-                                                                            autocomplete="off"
-                                                                            class="catalog__basket_action_oform_input">
-                                                                    </div>
-                                                                    <div class="catalog__basket_action_oform_info_formblock catalog__basket_action_oform_labelform"
-                                                                        data-label_key="tel">
-                                                                        <input type="text" name="tel" required value=""
-                                                                            placeholder="Телефон" autocomplete="off"
-                                                                            class="catalog__basket_action_oform_input">
-                                                                    </div>
-                                                                    <div class="catalog__basket_action_oform_info_formblock catalog__basket_action_oform_labelform"
-                                                                        data-label_key="email">
-                                                                        <input type="text" name="email" required
-                                                                            value="" placeholder="E-mail"
-                                                                            autocomplete="off"
-                                                                            class="catalog__basket_action_oform_input">
-                                                                    </div>
-                                                                    <div
-                                                                        class="catalog__basket_action_oform_info_formblock">
-                                                                        <input type="text" name="region" required
-                                                                            value="" placeholder="Регион"
-                                                                            autocomplete="off"
-                                                                            class="catalog__basket_action_oform_input">
-                                                                    </div>
-                                                                    <div class="catalog__basket_action_oform_info_formblock catalog__basket_action_oform_labelform"
-                                                                        data-label_key="city">
-                                                                        <input type="text" name="city" required value=""
-                                                                            placeholder="Город" autocomplete="off"
-                                                                            class="catalog__basket_action_oform_input">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div
-                                                                class="catalog__basket_action_oform_cont_basic_box1_hrline">
-                                                                &nbsp;</div>
-
-                                                            <div
-                                                                class="catalog__basket_action_oform_for_whom only_physical">
-                                                                <div
-                                                                    class="catalog__basket_action_oform_for_whom_title">
-                                                                    Расскажите нам, для кого вы
-                                                                    хотите приобрести
-                                                                    подарок
-                                                                </div>
-                                                                <div
-                                                                    class="catalog__basket_action_oform_for_whom_content">
-                                                                    <div
-                                                                        class="catalog__basket_action_oform_for_whom_formblock">
-                                                                        <div
-                                                                            class="catalog__basket_action_oform_styling_radio">
-                                                                            <label>
-                                                                                <input type="radio" name="for_whom"
-                                                                                    value="Подарок для детского сада">
-                                                                                <div
-                                                                                    class="catalog__basket_action_oform_styling_radio_cont_virt">
-                                                                                    <div
-                                                                                        class="catalog__basket_action_oform_styling_radio_pip">
-                                                                                        <span
-                                                                                            class="catalog__basket_action_oform_styling_radio_pip_v"></span>
-                                                                                    </div>
-                                                                                    <div
-                                                                                        class="catalog__basket_action_oform_styling_radio_tx">
-                                                                                        Подарок
-                                                                                        для
-                                                                                        детского
-                                                                                        сада
-                                                                                    </div>
-                                                                                </div>
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div
-                                                                        class="catalog__basket_action_oform_for_whom_formblock">
-                                                                        <div
-                                                                            class="catalog__basket_action_oform_styling_radio">
-                                                                            <label>
-                                                                                <input type="radio" name="for_whom"
-                                                                                    value="Подарок для класса">
-                                                                                <div
-                                                                                    class="catalog__basket_action_oform_styling_radio_cont_virt">
-                                                                                    <div
-                                                                                        class="catalog__basket_action_oform_styling_radio_pip">
-                                                                                        <span
-                                                                                            class="catalog__basket_action_oform_styling_radio_pip_v"></span>
-                                                                                    </div>
-                                                                                    <div
-                                                                                        class="catalog__basket_action_oform_styling_radio_tx">
-                                                                                        Подарок
-                                                                                        для
-                                                                                        класса
-                                                                                    </div>
-                                                                                </div>
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div
-                                                                        class="catalog__basket_action_oform_for_whom_formblock">
-                                                                        <div
-                                                                            class="catalog__basket_action_oform_styling_radio">
-                                                                            <label>
-                                                                                <input type="radio" name="for_whom"
-                                                                                    value="Подарок для себя">
-                                                                                <div
-                                                                                    class="catalog__basket_action_oform_styling_radio_cont_virt">
-                                                                                    <div
-                                                                                        class="catalog__basket_action_oform_styling_radio_pip">
-                                                                                        <span
-                                                                                            class="catalog__basket_action_oform_styling_radio_pip_v"></span>
-                                                                                    </div>
-                                                                                    <div
-                                                                                        class="catalog__basket_action_oform_styling_radio_tx">
-                                                                                        Подарок
-                                                                                        для себя
-                                                                                    </div>
-                                                                                </div>
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="catalog__basket_action_oform_cont_basic_box2">
-                                                        <div class="catalog__basket_action_oform_delivery">
-                                                            <div class="catalog__basket_action_oform_delivery_title">
-                                                                Доставка
-                                                            </div>
-                                                            <div class="catalog__basket_action_oform_delivery_title2">
-                                                                Выберите удобный способ
-                                                                получения заказа
-                                                            </div>
-                                                            <div class="catalog__basket_action_oform_delivery_content">
-                                                                <div
-                                                                    class="catalog__basket_action_oform_delivery_choice">
-                                                                    <div
-                                                                        class="catalog__basket_action_oform_delivery_choice_formblock">
-                                                                        <div
-                                                                            class="catalog__basket_action_oform_styling_radio">
-                                                                            <label>
-                                                                                <input type="radio"
-                                                                                    name="delivery_virt_type_key"
-                                                                                    value="1">
-                                                                                <div
-                                                                                    class="catalog__basket_action_oform_styling_radio_cont_virt">
-                                                                                    <div
-                                                                                        class="catalog__basket_action_oform_styling_radio_pip">
-                                                                                        <span
-                                                                                            class="catalog__basket_action_oform_styling_radio_pip_v"></span>
-                                                                                    </div>
-                                                                                    <div
-                                                                                        class="catalog__basket_action_oform_styling_radio_tx">
-                                                                                        Самовывоз
-                                                                                        со
-                                                                                        склада
-                                                                                        <span
-                                                                                            class="catalog__basket_action_oform_styling_radio_tx_dop">
-                                                                                            - вы
-                                                                                            можете
-                                                                                            забрать
-                                                                                            подарки
-                                                                                            самостоятельно
-                                                                                        </span>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div
-                                                                        class="catalog__basket_action_oform_delivery_choice_formblock">
-                                                                        <div
-                                                                            class="catalog__basket_action_oform_styling_radio">
-                                                                            <label>
-                                                                                <input type="radio"
-                                                                                    name="delivery_virt_type_key"
-                                                                                    value="2_1" checked="">
-                                                                                <div
-                                                                                    class="catalog__basket_action_oform_styling_radio_cont_virt">
-                                                                                    <div
-                                                                                        class="catalog__basket_action_oform_styling_radio_pip">
-                                                                                        <span
-                                                                                            class="catalog__basket_action_oform_styling_radio_pip_v"></span>
-                                                                                    </div>
-                                                                                    <div
-                                                                                        class="catalog__basket_action_oform_styling_radio_tx">
-                                                                                        Доставка
-                                                                                        по г.
-                                                                                        Набережные
-                                                                                        Челны
-                                                                                        - 300 р.
-                                                                                    </div>
-                                                                                </div>
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div
-                                                                        class="catalog__basket_action_oform_delivery_choice_formblock">
-                                                                        <div
-                                                                            class="catalog__basket_action_oform_styling_radio">
-                                                                            <label>
-                                                                                <input type="radio"
-                                                                                    name="delivery_virt_type_key"
-                                                                                    value="2_2">
-                                                                                <div
-                                                                                    class="catalog__basket_action_oform_styling_radio_cont_virt">
-                                                                                    <div
-                                                                                        class="catalog__basket_action_oform_styling_radio_pip">
-                                                                                        <span
-                                                                                            class="catalog__basket_action_oform_styling_radio_pip_v"></span>
-                                                                                    </div>
-                                                                                    <div
-                                                                                        class="catalog__basket_action_oform_styling_radio_tx">
-                                                                                        Доставка
-                                                                                        по г.
-                                                                                        Казань -
-                                                                                        500 р.
-                                                                                    </div>
-                                                                                </div>
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div
-                                                                        class="catalog__basket_action_oform_delivery_choice_formblock">
-                                                                        <div
-                                                                            class="catalog__basket_action_oform_styling_radio">
-                                                                            <label>
-                                                                                <input type="radio"
-                                                                                    name="delivery_virt_type_key"
-                                                                                    value="3">
-                                                                                <div
-                                                                                    class="catalog__basket_action_oform_styling_radio_cont_virt">
-                                                                                    <div
-                                                                                        class="catalog__basket_action_oform_styling_radio_pip">
-                                                                                        <span
-                                                                                            class="catalog__basket_action_oform_styling_radio_pip_v"></span>
-                                                                                    </div>
-                                                                                    <div
-                                                                                        class="catalog__basket_action_oform_styling_radio_tx">
-                                                                                        Доставка
-                                                                                        транспортной
-                                                                                        компанией
-                                                                                        <span
-                                                                                            class="catalog__basket_action_oform_styling_radio_tx_dop">
-                                                                                            -
-                                                                                            наш
-                                                                                            менеджер
-                                                                                            рассчитает
-                                                                                            доставку
-                                                                                            и
-                                                                                            сообщит
-                                                                                            вам
-                                                                                        </span>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div
-                                                                    class="catalog__basket_action_oform_delivery_intermediate">
-                                                                    <div class="catalog__basket_action_oform_delivery_need_date catalog__basket_action_oform_delivery_intermediate_formblock catalog__basket_action_oform_labelform"
-                                                                        data-label_key="delivery_need_date" style="">
-                                                                        <div
-                                                                            class="catalog__basket_action_oform_delivery_intermediate_formcont1">
-                                                                            <div
-                                                                                class="catalog__basket_action_oform_delivery_intermediate_formcont1_box1">
-                                                                                Дата доставки
-                                                                            </div>
-                                                                            <div
-                                                                                class="catalog__basket_action_oform_delivery_intermediate_formcont1_box2">
-                                                                                <input type="text" required
-                                                                                    name="delivery_need_date"
-                                                                                    class="catalog__basket_action_oform_input2 hasDatepicker"
-                                                                                    autocomplete="off"
-                                                                                    id="dp1715642977381">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="catalog__basket_action_oform_delivery_adress catalog__basket_action_oform_delivery_intermediate_formblock catalog__basket_action_oform_labelform"
-                                                                        data-label_key="adress" style="">
-                                                                        <div
-                                                                            class="catalog__basket_action_oform_delivery_intermediate_formcont1">
-                                                                            <div
-                                                                                class="catalog__basket_action_oform_delivery_intermediate_formcont1_box1">
-                                                                                Адрес доставки
-                                                                            </div>
-                                                                            <div
-                                                                                class="catalog__basket_action_oform_delivery_intermediate_formcont1_box2">
-                                                                                <textarea name="adress" required
-                                                                                    class="catalog__basket_action_oform_textarea2"
-                                                                                    autocomplete="off"></textarea>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div
-                                                                    class="catalog__basket_action_oform_delivery_footer">
-                                                                    <div
-                                                                        class="catalog__basket_action_oform_delivery_footer_cont">
-                                                                        <div
-                                                                            class="catalog__basket_action_oform_delivery_footer_cont_box1">
-                                                                            <div
-                                                                                class="catalog__basket_action_oform_itog">
-                                                                                <div
-                                                                                    class="catalog__basket_action_oform_itog_summa_tovar">
-                                                                                    Сумма заказа
-                                                                                    со скидкой:
-                                                                                    <span
-                                                                                        class="catalog__basket_action_oform_itog_summa_tovar_span">
-                                                                                        <span
-                                                                                            class="catalog__basket_dataget_summa_tovar">1
-                                                                                            034</span>
-                                                                                        р.
-                                                                                    </span>
-                                                                                </div>
-                                                                                <div
-                                                                                    class="catalog__basket_action_oform_itog_summa_delivery">
-                                                                                    Стоимость
-                                                                                    доставки:
-                                                                                    <span
-                                                                                        class="catalog__basket_action_oform_itog_summa_delivery_span">
-                                                                                        <span
-                                                                                            class="catalog__basket_action_oform_itog_summa_delivery_span_standart">
-                                                                                            <span
-                                                                                                class="catalog__basket_dataget_summa_dostav">300</span>
-                                                                                            р.
-                                                                                        </span>
-                                                                                        <span
-                                                                                            class="catalog__basket_action_oform_itog_summa_delivery_span_nestandart"
-                                                                                            style="display: none;">
-                                                                                            рассчитает
-                                                                                            менеджер
-                                                                                        </span>
-                                                                                    </span>
-                                                                                </div>
-                                                                                <div
-                                                                                    class="catalog__basket_action_oform_itog_summa">
-                                                                                    Итого: <span
-                                                                                        class="catalog__basket_action_oform_itog_summa_span">
-                                                                                        <span
-                                                                                            class="catalog__basket_dataget_summa">1
-                                                                                            334</span>
-                                                                                        р.
-                                                                                    </span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div
-                                                                            class="catalog__basket_action_oform_delivery_footer_cont_box2">
-                                                                            <div
-                                                                                class="catalog__basket_action_oform_but">
-                                                                                <button type="submit"
-                                                                                    class="catalog__basket_action_oform_but_button">Оформить
-                                                                                    заказ</button>
-                                                                            </div>
-
-                                                                            <div
-                                                                                class="catalog__basket_action_oform_error">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="catalog__basket_action_oform_rules">
-                                                                        Нажимая на кнопку
-                                                                        «Оплатить заказ» и
-                                                                        «Оформить
-                                                                        заказ без оплаты» вы
-                                                                        соглашаетесь с
-                                                                        <a href="/personalnie-dannie/"
-                                                                            target="_blank">условиями
-                                                                            хранения
-                                                                            персональных
-                                                                            данных</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
 
             <div class="oformlenie_zakaza_container">
                 <form id="orderForm" class="oformlenie_zakaza">

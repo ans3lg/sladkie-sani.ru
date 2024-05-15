@@ -562,3 +562,87 @@
 .commeronline_selbox1 select option{
     color:#000;
 }
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+}
+
+.modal-content-podbor {
+    width: 1288px;
+    min-height: 923px;
+    background-repeat: no-repeat;
+    background: url(../../plugin/commeronline/custom_img/commeronline_ng_bg.png);
+    margin: 50px auto;
+    position: relative;
+    z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+
+}
+
+@media (max-width: 1365px) {
+    .modal-content-podbor {
+        width:600px;
+        min-height:923px;
+        background:#e7f5fb;
+        margin: 0 auto;
+        z-index: 9999999999;
+    }
+    #close {
+    cursor: pointer;
+    position: absolute;
+    background: url(./plugin/commeronline/custom_img/commeronline_ng_close.svg);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 100000000;
+}
+}
+@media (max-width: 630px) {
+    .modal-content-podbor {
+        width:370px;
+        min-height:923px;
+        background:#e7f5fb;
+        font-size: 14px;
+        z-index: 999999999999999;
+    }
+    #close {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+}
+
+#modal_podbor {
+    cursor: pointer;
+}
+
+#close {
+    cursor: pointer;
+    position: absolute;
+    background: url(../../plugin/commeronline/custom_img/commeronline_ng_close.svg);
+    width: 30px;
+    height: 30px;
+    top: 70px;
+    right: 70px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 999999999999;
+}
